@@ -5,12 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class button : MonoBehaviour
+public class toSettei : MonoBehaviour
 {
-    
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +16,13 @@ public class button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
-
-
 
     // ボタンをクリックするとBattleSceneに移動します
     public void ButtonClicked()
     {
 
-        SceneManager.LoadScene("ステージ選択画面");
+        SceneManager.LoadScene("設定");
     }
-}    
+}
