@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: b2a48f88a662593f2ed0ae2f609906a1_a20e10b34f8b9f083be0f1faf36b6f5d_7
+  m_Name: kusa1-tuti1_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2783812211789504897, guid: 8a6552bee485b3e40b7e72d3449c6a8c, type: 3}
+  m_Sprite: {fileID: -4561126790129929635, guid: 5022df8f6848ac445be236494d3a8764, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -33,4 +33,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 0
+  m_ColliderType: 1
