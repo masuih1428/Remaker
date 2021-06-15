@@ -17,11 +17,12 @@ public class MainSoundScript : MonoBehaviour
             audioSource.clip = audioClip3;
             audioSource.Play();
             count = 1;
+            if (dontDestroyEnabled)
+            {
+                DontDestroyOnLoad(this);
+            }
         }
-        if (dontDestroyEnabled)
-        {
-            DontDestroyOnLoad(this);
-        }
+        
     }
 
 }
