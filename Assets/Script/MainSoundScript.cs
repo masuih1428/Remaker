@@ -23,6 +23,5 @@ public class MainSoundScript : MonoBehaviour
             DontDestroyOnLoad(this);
         }
     }
-    
-}
 
+}
