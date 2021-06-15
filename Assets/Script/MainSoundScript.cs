@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class MainSoundScript : MonoBehaviour
 {
-    public bool DontDestroyEnabled = true;
-
-    // Use this for initialization
+    public AudioClip audioClip3;
+    private AudioSource audioSource;
+    public bool dontDestroyEnabled = true;
+    static int count = 0;
     void Start()
     {
-        if (DontDestroyEnabled)
+        if (count == 0)
         {
-            // Sceneを遷移してもオブジェクトが消えないようにする
+
+            audioSource = gameObject.GetComponent<AudioSource>();
+            audioSource.clip = audioClip3;
+            audioSource.Play();
+            count = 1;
+        }
+        if (dontDestroyEnabled)
+        {
             DontDestroyOnLoad(this);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 }
+
