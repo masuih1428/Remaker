@@ -41,4 +41,8 @@ public class toMain : MonoBehaviour
     {
         SceneManager.LoadScene("shop");
     }
+    public void Onclick6()
+    {
+        SceneManager.LoadScene("ƒ^ƒCƒgƒ‹");
+    }
 }

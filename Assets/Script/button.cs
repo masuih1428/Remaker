@@ -29,6 +29,6 @@ public class button : MonoBehaviour
     public void ButtonClicked()
     {
 
-        SceneManager.LoadScene("ステージ選択画面");
+        SceneManager.LoadScene("ホーム");
     }
 }    
