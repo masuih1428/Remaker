@@ -31,7 +31,7 @@ public class toMain : MonoBehaviour
     }
     public void Onclick3()
     {
-        SceneManager.LoadScene("キャラ選択画面");
+        SceneManager.LoadScene("マップ選択");
     }
     public void Onclick4()
     {
@@ -44,5 +44,13 @@ public class toMain : MonoBehaviour
     public void Onclick6()
     {
         SceneManager.LoadScene("タイトル");
+    }
+    public void Onclick7()
+    {
+        SceneManager.LoadScene("ホーム");
+    }
+    public void Onclick8()
+    {
+        SceneManager.LoadScene("キャラ選択画面");
     }
 }
