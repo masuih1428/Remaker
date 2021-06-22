@@ -257,11 +257,11 @@ MonoBehaviour:
   m_Content: {fileID: 382948085}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 30
   m_Viewport: {fileID: 1375181064}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 418670057}
@@ -823,7 +823,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 23, y: 0}
   m_SizeDelta: {x: 20, y: 0}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &418670057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 539129030}
   m_HandleRect: {fileID: 539129029}
-  m_Direction: 2
+  m_Direction: 3
   m_Value: 1
   m_Size: 0.39275247
   m_NumberOfSteps: 0
