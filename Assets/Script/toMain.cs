@@ -22,7 +22,6 @@ public class toMain : MonoBehaviour
     // ボタンをクリックするとBattleSceneに移動します
     public void Onclick1()
     {
-
         SceneManager.LoadScene("ステージ選択画面");
     }
     public void Onclick2()
@@ -35,7 +34,7 @@ public class toMain : MonoBehaviour
     }
     public void Onclick4()
     {
-        SceneManager.LoadScene("生成・素材・付替");
+        SceneManager.LoadScene("生成・素材・付替メニュー");
     }
     public void Onclick5()
     {
@@ -52,5 +51,9 @@ public class toMain : MonoBehaviour
     public void Onclick8()
     {
         SceneManager.LoadScene("キャラ選択画面");
+    }
+    public void Onclick9()
+    {
+        SceneManager.LoadScene("生成・付替画面");
     }
 }
