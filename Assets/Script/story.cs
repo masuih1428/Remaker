@@ -9,7 +9,7 @@ public class story : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class story : MonoBehaviour
     }
     public void ButtonClicked()
     {
-
+      
         SceneManager.LoadScene("story");
     }
 }

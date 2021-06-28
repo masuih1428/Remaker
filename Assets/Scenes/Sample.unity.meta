@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d28f57984737de1408ba07ddaa3c2744
+=======
+<<<<<<< HEAD:Assets/Scenes/score.unity.meta
+guid: b0a009420a7807c46aadcef3efe27763
+=======
+guid: d28f57984737de1408ba07ddaa3c2744
+>>>>>>> 6ba79b94d231090d3551b2daf99f4e823066cd88:Assets/Scenes/Sample.unity.meta
+>>>>>>> af0882e54781234e9062821e317341637d4616bc
 DefaultImporter:
   externalObjects: {}
   userData: 
