@@ -700,7 +700,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1891305976}
         m_TargetAssemblyTypeName: toMain, Assembly-CSharp
-        m_MethodName: Onclick8
+        m_MethodName: Onclick10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1076,7 +1076,7 @@ MonoBehaviour:
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1317,7 +1317,7 @@ MonoBehaviour:
     m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 223
     m_Alignment: 4
     m_AlignByGeometry: 0
