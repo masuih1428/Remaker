@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dragon_right
+  m_Name: devil_front
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 86145beec9429b8468bc4b29ad959704, type: 3}
+      value: {fileID: -7902430790663607733, guid: 526331c33d520574ead98c87ac9123e0, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 4b751396f4c2b1a41a31ba044e381442, type: 3}
+      value: {fileID: -4614595567980283667, guid: 492f8ed45632af042a4cba5d4ac8a1fd, type: 3}
     - time: 1
-      value: {fileID: 21300000, guid: 86145beec9429b8468bc4b29ad959704, type: 3}
+      value: {fileID: 1824091491517517462, guid: 492f8ed45632af042a4cba5d4ac8a1fd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 86145beec9429b8468bc4b29ad959704, type: 3}
-    - {fileID: 21300000, guid: 4b751396f4c2b1a41a31ba044e381442, type: 3}
-    - {fileID: 21300000, guid: 86145beec9429b8468bc4b29ad959704, type: 3}
+    - {fileID: -7902430790663607733, guid: 526331c33d520574ead98c87ac9123e0, type: 3}
+    - {fileID: -4614595567980283667, guid: 492f8ed45632af042a4cba5d4ac8a1fd, type: 3}
+    - {fileID: 1824091491517517462, guid: 492f8ed45632af042a4cba5d4ac8a1fd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
