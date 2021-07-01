@@ -14,11 +14,13 @@ public class BGMvol : MonoBehaviour
     void Start()
     {
         audio = GameObject.Find("GameObject").GetComponent<AudioSource>();
+        slider.value = audio.volume;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         audio.volume = slider.value;
         levelvalue = slider.value * 100;
         valuetext.text = levelvalue.ToString("f0");
