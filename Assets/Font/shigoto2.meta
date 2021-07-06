@@ -1,10 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Loading.unity.meta
 guid: 2a59217ab73ec9a4e8e9d7e0f7b60f28
 =======
 guid: bfdfdeb089a2cec4f8945e5dca43e335
 folderAsset: yes
 >>>>>>> bd0d2ecb2eebb3b6d8e5b0f11cdbdd70ddbdb61b:Assets/Font/shigoto2.meta
+=======
+guid: bfdfdeb089a2cec4f8945e5dca43e335
+folderAsset: yes
+>>>>>>> af0882e54781234e9062821e317341637d4616bc
 DefaultImporter:
   externalObjects: {}
   userData: 
