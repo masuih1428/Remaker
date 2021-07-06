@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - drop
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - "\u900F\u304B\u3057"
   - Water
   - UI
-  - 
+  - drop
   - 
   - 
   - 
