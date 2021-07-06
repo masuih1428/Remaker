@@ -807,6 +807,23 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
+--- !u!1 &283581620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5436978266653085475, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+  m_PrefabInstance: {fileID: 1685099146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &283581622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283581620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3812b841b27de8149ab4129c1c13edc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &335403495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6952,6 +6969,34 @@ PrefabInstance:
     - target: {fileID: 673653427779458406, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 283581622}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickStartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BuckButtonScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 870181145272925011, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1104118206278706274, guid: d2cc9e3c666aeba45b6aff8962ff1351, type: 3}
       propertyPath: m_Pivot.x
