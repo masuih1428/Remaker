@@ -700,11 +700,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1891305976}
         m_TargetAssemblyTypeName: toMain, Assembly-CSharp
-<<<<<<< HEAD
         m_MethodName: Onclick10
-=======
-        m_MethodName: Onclick8
->>>>>>> 5e71a4c9bdfd3d4151f1322e9f7b729247e65587
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
