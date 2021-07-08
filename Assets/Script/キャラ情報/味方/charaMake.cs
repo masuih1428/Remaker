@@ -22,9 +22,13 @@ public class charaMake : MonoBehaviour
         List<GameObject> dropLists = new List<GameObject>();
         for (int i = 0; i < drops.Count; i++)
         {
+            //アイコンの子のゲームオブジェクトを取得
             GameObject droplist = drops[i].transform.GetChild(0).gameObject;
+            if (droplist == null)
+            {
+                return;
+            }
             dropLists.Add(droplist);
         }
-
     }
 }

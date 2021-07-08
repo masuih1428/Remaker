@@ -10,4 +10,5 @@ public class friendChara:chara
     public int block;//ブロック数
     public bool wepon = false; //武器が装備可能か
     public int waitTime; //再出撃可能時間
+    public List<GameObject> gameObjects;
 }
