@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class bodyDrop : drop
 {
     public int block;//ƒuƒƒbƒN”
