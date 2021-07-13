@@ -7,6 +7,6 @@ public class SozaiButtonScript : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("¶¬E•t‘Ö‰æ–Ê");
+        SceneManager.LoadScene("‘fŞˆê——");
     }
 }
