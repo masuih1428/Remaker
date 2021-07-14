@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class headDrop : drop
 {
     public int defattribute = 0;//ç‘®«
