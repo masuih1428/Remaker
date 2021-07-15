@@ -37,4 +37,11 @@ public class drop : MonoBehaviour
             }
         }
     }
+
+    public string Tostring()
+    {
+
+        string returnstring = "part:"+this.part +"\n"+"hp:" + this.hp+"\natk:"+ + this.atk + "\ndef:" + this.def + "\nmdef:" + this.mdef + "\n";
+        return returnstring;
+    } 
 }
