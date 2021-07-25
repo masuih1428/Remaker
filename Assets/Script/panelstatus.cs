@@ -25,7 +25,7 @@ public class panelstatus : MonoBehaviour
     {
         try
         {
-            GameObject obj = nakami.transform.GetChild(0).gameObject;
+            GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
             drop script = obj.GetComponent<drop>();
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;

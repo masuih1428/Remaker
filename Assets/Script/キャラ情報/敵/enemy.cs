@@ -8,7 +8,7 @@ public class enemy : chara
     public int attribute = 0;//キャラの属性 0が無 1が火 2が水 3が木
     public float move = 1; //移動速度
     public float dps = 1; //攻撃速度(dps換算）
-    public SavedataObject savedata;
+    public SaveData savedata;
 
     public List<GameObject> dropList;
 
