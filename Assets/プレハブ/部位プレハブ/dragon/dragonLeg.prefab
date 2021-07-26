@@ -95,10 +95,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f3fdea24ebdb34888a5ecfefe9c9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partName: dragonLeg
   part: leg
   hp: 1000
   atk: 50
   def: 150
   mdef: 5
+  rareFloat: 1
   rare: 
   waitTime: 10

@@ -8,6 +8,7 @@ public class panelstatus : MonoBehaviour
 {
     public GameObject nakami;
     public GameObject textPanel;
+    public GameObject image;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,13 @@ public class panelstatus : MonoBehaviour
             // Debug.Log(obj);
             drop script = obj.GetComponent<drop>();
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
+            //ステータスパネルの内容の変更
             Text text = obj1.GetComponent<Text>();
             text.text = script.Tostring();
+            //キャラ画像の表示
+            image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
+
+            image.SetActive(true);
             return;
         } catch (Exception e)
         {
@@ -44,6 +50,9 @@ public class panelstatus : MonoBehaviour
         
         GameObject obj2 = textPanel.transform.GetChild(1).gameObject;
         Text text1 = obj2.GetComponent<Text>();
+        //テキストの初期化
         text1.text = "";
+        //キャラ画像の非表示
+        image.GetComponent<Image>().SetOpacity(0.0f);
     }
 }
