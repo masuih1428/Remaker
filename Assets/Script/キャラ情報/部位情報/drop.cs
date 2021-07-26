@@ -5,21 +5,36 @@ using UnityEngine;
 [System.Serializable]
 public class drop : MonoBehaviour
 {
+    public string partName;
     public string part;//どこの部位か
     public int hp;
     public int atk;
     public int def;
     public int mdef;
-
-    public string rare = null;//レア度
+    public float rareFloat = 1;
+    public string rare = "";//レア度
 
     public void Start()
     {
-        if (this.rare == null)
+
+    }
+
+    public string Tostring()
+    {
+
+        string returnstring = "part:"+this.part +"\n"+"hp:" + (this.hp * this.rareFloat) + "\natk:"+ +(this.atk * this.rareFloat) + "\ndef:" + (this.def * this.rareFloat) + "\nmdef:" + (this.mdef * this.rareFloat) + "\n";
+        return returnstring;
+    } 
+
+    public void rareStart()
+    {
+        //rareがnullの時のみ最初にレアリティを決める
+        Debug.Log("Start");
+        if (this.rare == "")
         {
+            Debug.Log("null");
             //レア度がnullの場合のみレア度を乱数で作成
             float r1 = Random.value;//0.0f～1.0fまでの値
-            float normal = 0.6f;//ノーマルの確率
             float rare = 0.3f; //レア
             float epic = 0.1f; //エピック
 
@@ -27,9 +42,11 @@ public class drop : MonoBehaviour
             {
                 case float r2 when r2 < epic:
                     this.rare = "epic";
+                    this.rareFloat = 1.1f;
                     break;
                 case float r2 when r2 < rare + epic:
                     this.rare = "rare";
+                    this.rareFloat = 1.05f;
                     break;
                 default:
                     this.rare = "normal";
@@ -37,11 +54,4 @@ public class drop : MonoBehaviour
             }
         }
     }
-
-    public string Tostring()
-    {
-
-        string returnstring = "part:"+this.part +"\n"+"hp:" + this.hp+"\natk:"+ + this.atk + "\ndef:" + this.def + "\nmdef:" + this.mdef + "\n";
-        return returnstring;
-    } 
 }
