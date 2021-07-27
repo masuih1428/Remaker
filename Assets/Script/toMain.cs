@@ -56,4 +56,16 @@ public class toMain : MonoBehaviour
     {
         SceneManager.LoadScene("生成・付替画面");
     }
+    public void Onclick10()
+    {
+        SceneManager.LoadScene("キャラ編成画面");
+    }
+    public void Onclick11()
+    {
+        SceneManager.LoadScene("出撃画面");
+    }
+    public void Onclick12()
+    {
+        SceneManager.LoadScene("素材一覧");
+    }
 }
