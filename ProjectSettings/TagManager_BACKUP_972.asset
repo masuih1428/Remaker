@@ -3,18 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - drop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
+<<<<<<< HEAD
   - Enemy
+=======
+  - "\u900F\u304B\u3057"
+>>>>>>> e7f9a016a202c24bccd93d5e88a1cea78be895c0
   - Water
   - UI
+  - drop
+  - 
+  - 
   - Block
-  - 
-  - 
-  - 
   - 
   - 
   - 
