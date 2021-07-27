@@ -7,7 +7,11 @@ public class PanelControl : MonoBehaviour
 {
     [SerializeField]
     public SaveData saveData;
-    public GameObject content;
+    public GameObject headContent;
+    public GameObject bodyContent;
+    public GameObject armContent;
+    public GameObject legContent;
+    public GameObject weponContent;
     public GameObject panel;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +19,25 @@ public class PanelControl : MonoBehaviour
         for (int i = 0; i < saveData.drops.Count; i++)
         {
             GameObject panelObj = (GameObject)Instantiate(panel);
-            panelObj.transform.SetParent(content.transform, false);
+            switch (saveData.drops[i].GetComponent<drop>().part)
+            {
+                case "head":
+                    panelObj.transform.SetParent(headContent.transform, false);
+                    break;
+                case "body":
+                    panelObj.transform.SetParent(bodyContent.transform, false);
+                    break;
+                case "hand":
+                    panelObj.transform.SetParent(armContent.transform, false);
+                    break;
+                case "leg":
+                    panelObj.transform.SetParent(legContent.transform, false);
+                    break;
+                case "wepon":
+                    panelObj.transform.SetParent(weponContent.transform, false);
+                    break;
+            }
+            
             GameObject dropObj = (GameObject)Instantiate(saveData.drops[i],panelObj.transform);
             dropObj.transform.parent.SetParent(panelObj.transform, false);
             drop drop = dropObj.GetComponent<drop>();//ドロップスクリプトを取得
