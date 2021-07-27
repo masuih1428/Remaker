@@ -3,17 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - drop
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - "\u900F\u304B\u3057"
   - Water
   - UI
   - 
   - 
-  - 
+  - drops
   - 
   - 
   - 
@@ -40,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: drops
+    uniqueID: 2930738813
     locked: 0
