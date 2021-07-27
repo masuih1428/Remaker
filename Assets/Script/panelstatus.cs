@@ -35,8 +35,7 @@ public class panelstatus : MonoBehaviour
             text.text = script.Tostring();
             //ƒLƒƒƒ‰‰æ‘œ‚Ì•\Ž¦
             image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
-
-            image.SetActive(true);
+            image.GetComponent<Image>().SetOpacity(1.0f);
             return;
         } catch (Exception e)
         {
