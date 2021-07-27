@@ -14,15 +14,4 @@ public class statusImage : MonoBehaviour
         image.GetComponent<Image>().SetOpacity(0.0f);
     }
 
-    // Update is called once per frame
-    public void Update()
-    {
-        if (image.GetComponent<Image>().sprite == )
-        {
-            image.GetComponent<Image>().SetOpacity(1.0f);
-        }
-        image.GetComponent<Image>().sprite = prefbImage.GetComponent<Image>().sprite;
-        //画像を不透明にシテ表示
-        
-    }
 }
