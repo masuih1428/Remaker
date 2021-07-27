@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wepon : MonoBehaviour
+public class wepon : drop
 {
-    public string name;
-    public int hp;
-    public int atk;
-    public int def;
-    public int mdef;
     public float range = 1;//Ë’ö”ÍˆÍ
     public bool magic;//–‚–@g‚¤‚©
     public float atkSpeed = 1;//UŒ‚‘¬“x

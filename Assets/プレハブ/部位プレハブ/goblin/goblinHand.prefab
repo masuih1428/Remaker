@@ -95,11 +95,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1451344f88df9334fb7a6340f7e63e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  partName: goblinHand
   part: hand
   hp: 200
   atk: 90
   def: 10
   mdef: 0
+  rareFloat: 1
   rare: 
   atkSpeed: 0.9
   wepon: 1

@@ -95,11 +95,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335b0478845056e448c01394ab9f4bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: "\u30DF\u30B9\u30C6\u30A4\u30F3"
+  partName: "\u30DF\u30B9\u30C6\u30A4\u30F3"
+  part: wepon
   hp: 100
   atk: 30
   def: 0
   mdef: 5
+  rareFloat: 1
+  rare: 
   range: 1
   magic: 0
   atkSpeed: 1
