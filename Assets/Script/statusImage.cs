@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class statusImage : MonoBehaviour
+public class StatusImage : MonoBehaviour
 {
     public GameObject prefbImage;
     public GameObject image;

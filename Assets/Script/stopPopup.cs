@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stopPopup : MonoBehaviour
+public class StopPopup : MonoBehaviour
 {
     [SerializeField]
     public GameObject stopPopup1;

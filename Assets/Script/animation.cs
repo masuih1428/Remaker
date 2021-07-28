@@ -5,7 +5,7 @@ using UnityEngine;
 /**
  * ƒLƒƒƒ‰‚ÌÀ•W‚ğ•ÏX‚·‚éController
  */
-public class animation : MonoBehaviour
+public class Animation : MonoBehaviour
 {
     [SerializeField]
     float SPEED = 1.0f;

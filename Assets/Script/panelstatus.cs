@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class panelstatus : MonoBehaviour
+public class Panelstatus : MonoBehaviour
 {
     public GameObject nakami;
     public GameObject textPanel;
@@ -28,7 +28,7 @@ public class panelstatus : MonoBehaviour
         {
             GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
-            drop script = obj.GetComponent<drop>();
+            Drop script = obj.GetComponent<Drop>();
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
             //ステータスパネルの内容の変更
             Text text = obj1.GetComponent<Text>();
