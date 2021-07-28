@@ -171,6 +171,8 @@ MonoBehaviour:
   nakami: {fileID: 1503689099173999011}
   textPanel: {fileID: 3988131342696394035, guid: 97953492ca7b28a4a89ec14594818269, type: 3}
   image: {fileID: 5377933188486689594, guid: f7597f6dd69b355419daae72e1709ba0, type: 3}
+  spriteImage: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
+  prefbImage: {fileID: 0}
 --- !u!61 &3258578017668394331
 BoxCollider2D:
   m_ObjectHideFlags: 0

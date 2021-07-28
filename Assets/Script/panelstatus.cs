@@ -9,6 +9,7 @@ public class Panelstatus : MonoBehaviour
     public GameObject nakami;
     public GameObject textPanel;
     public GameObject image;
+    public Sprite spriteImage;
 
     // Start is called before the first frame update
     void Start()
@@ -35,13 +36,13 @@ public class Panelstatus : MonoBehaviour
             text.text = script.Tostring();
             //キャラ画像の表示
             image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
-            image.GetComponent<Image>().SetOpacity(1.0f);
             return;
         } catch (Exception e)
         {
             Debug.Log(e.Data);
         }
         textClear();
+        imageClear();
     }
 
     public void textClear()
@@ -51,7 +52,10 @@ public class Panelstatus : MonoBehaviour
         Text text1 = obj2.GetComponent<Text>();
         //テキストの初期化
         text1.text = "";
-        //キャラ画像の非表示
-        image.GetComponent<Image>().SetOpacity(0.0f);
+    }
+
+    public void imageClear()
+    {
+        image.GetComponent<Image>().sprite = spriteImage;
     }
 }
