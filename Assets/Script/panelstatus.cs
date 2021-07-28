@@ -23,7 +23,7 @@ public class Panelstatus : MonoBehaviour
 
     }
 
-    public void Onclick()
+    public void DropOnclick()
     {
         try
         {
@@ -40,6 +40,31 @@ public class Panelstatus : MonoBehaviour
         } catch (Exception e)
         {
             Debug.Log(e.Data);
+        }
+        textClear();
+        imageClear();
+    }
+
+    public void HumanOnclick()
+    {
+        try
+        {
+            GameObject obj = nakami.transform.GetChild(1).gameObject;
+            // Debug.Log(obj);
+            CharaScript script = obj.GetComponent<CharaScript>();
+            Debug.Log(script);
+            GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
+            //ステータスパネルの内容の変更
+            Debug.Log(obj1);
+            Text text = obj1.GetComponent<Text>();
+            text.text = script.ToString();
+            //キャラ画像の表示
+            image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
+            return;
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
         }
         textClear();
         imageClear();

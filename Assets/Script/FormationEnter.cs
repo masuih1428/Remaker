@@ -1,46 +1,41 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PartyControl : MonoBehaviour
+public class FormationEnter : MonoBehaviour
 {
     public SaveData saveData;
     public GameObject content1;
     public GameObject content2;
     public GameObject content3;
-    // Start is called before the first frame update
-    void Start()
+    public void Onclick()
     {
         for (int i = 0; i < 3; i++)
         {
-            switch(i)
+            switch (i)
             {
                 case 0:
-                    partySet(saveData.humanParty1, 1);
+                    partyUpdate(saveData.humanParty1, 1);
                     break;
                 case 1:
-                    partySet(saveData.humanParty2, 2);
+                    partyUpdate(saveData.humanParty2, 2);
                     break;
                 case 2:
-                    partySet(saveData.humanParty3, 3);
+                    partyUpdate(saveData.humanParty3, 3);
                     break;
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void partySet(List<GameObject> party,int partyNum)
+    void partyUpdate(List<GameObject> party, int partyNum)
     {
         GameObject game = null;
         for (int j = 0; j < party.Count; j++)
         {
-            switch(partyNum)
+            switch (partyNum)
             {
                 case 1:
                     game = content1;
@@ -55,12 +50,15 @@ public class PartyControl : MonoBehaviour
 
             //XVˆ—
             GameObject gameChild1 = game.transform.GetChild(j).gameObject;
-            GameObject gameChild2 = gameChild1.transform.GetChild(0).gameObject;
-            gameChild2.GetComponent<Image>().sprite = party[j].GetComponent<SpriteRenderer>().sprite;
-            GameObject humanObj = (GameObject)Instantiate(party[j]);
-            humanObj.transform.SetParent(gameChild1.transform, false);
-            humanObj.SetActive(false);
-
+            GameObject gameChild2 = gameChild1.transform.GetChild(1).gameObject;
+            Debug.Log(PrefabUtility.GetPrefabParent(content3));
+            /*try
+            {
+                party.Add((GameObject)PrefabUtility.GetPrefabParent(gameChild2));
+            } catch (Exception e)
+            {
+                Debug.Log(e);
+            }*/
         }
     }
 }

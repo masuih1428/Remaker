@@ -11,4 +11,5 @@ public class SaveData : ScriptableObject
     public List<GameObject> humanParty1;//ƒLƒƒƒ‰•Ò¬‚P
     public List<GameObject> humanParty2;//ã“¯‚Q
     public List<GameObject> humanParty3;//ã“¯‚R
+    public List<GameObject> humanList;
 }

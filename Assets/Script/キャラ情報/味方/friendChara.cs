@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class FriendChara:chara
+public class FriendChara:Chara
 {
     public int defattribute = 0;//ç‘®«
     public float MatkSpeed; //–‚–@UŒ‚‘¬“x
