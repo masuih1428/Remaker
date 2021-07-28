@@ -480,7 +480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7318146398227357867, guid: 97953492ca7b28a4a89ec14594818269, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7318146398227357867, guid: 97953492ca7b28a4a89ec14594818269, type: 3}
       propertyPath: m_Color.b
@@ -614,6 +614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefbImage: {fileID: 5377933188486689594, guid: f7597f6dd69b355419daae72e1709ba0, type: 3}
   image: {fileID: 895760117}
+  panel: {fileID: 1503689099173999011, guid: 3ccbdfd1254df254c8d73892aaead9e5, type: 3}
 --- !u!1 &1088832741
 GameObject:
   m_ObjectHideFlags: 0
