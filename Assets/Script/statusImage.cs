@@ -28,6 +28,8 @@ public class StatusImage : MonoBehaviour
             Debug.Log(hit2d);
             clickedGameObject = hit2d.transform.gameObject;
             Debug.Log(clickedGameObject);
+            bool i = hit2d.transform.gameObject == panel;
+            Debug.Log(i);
 
             if(hit2d && hit2d.transform.gameObject == panel)
             {
