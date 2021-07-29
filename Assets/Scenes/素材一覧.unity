@@ -2429,6 +2429,7 @@ MonoBehaviour:
   prefbImage: {fileID: 5377933188486689594, guid: f7597f6dd69b355419daae72e1709ba0, type: 3}
   image: {fileID: 1932341533}
   panel: {fileID: 1503689099173999011, guid: 3ccbdfd1254df254c8d73892aaead9e5, type: 3}
+  spriteImage: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1976837400
 GameObject:
   m_ObjectHideFlags: 0
