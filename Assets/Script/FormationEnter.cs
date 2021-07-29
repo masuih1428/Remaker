@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FormationEnter : MonoBehaviour
@@ -51,14 +52,18 @@ public class FormationEnter : MonoBehaviour
             //更新処理
             GameObject gameChild1 = game.transform.GetChild(j).gameObject;
             GameObject gameChild2 = gameChild1.transform.GetChild(1).gameObject;
-            Debug.Log(PrefabUtility.GetPrefabParent(content3));
-            /*try
+            Debug.Log((GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource(gameChild2));
+            try
             {
-                party.Add((GameObject)PrefabUtility.GetPrefabParent(gameChild2));
+                party[j] = ((GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource(gameChild2));
             } catch (Exception e)
             {
                 Debug.Log(e);
-            }*/
+            }
         }
+        // 現在のSceneを取得
+        Scene loadScene = SceneManager.GetActiveScene();
+        // 現在のシーンを再読み込みする
+        SceneManager.LoadScene(loadScene.name);
     }
 }
