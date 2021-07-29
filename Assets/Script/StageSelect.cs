@@ -1,23 +1,26 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class StageSelect : MonoBehaviour
 {
 
     //生成するゲームオブジェクト
     public GameObject target;
+    public Image image;
+    private Sprite sprite;
+    [SerializeField] Image mapimg = null;
 
-    void Update()
-    {
-     
-    }
+    
     public void OnclickButton()
     {
-        Debug.Log("１が押された");
+        
+        mapimg.sprite = Resources.Load<Sprite>("Image/火山");
     }
     public void Onclick2()
     {
-        Debug.Log("2が押された");
+       
+        mapimg.sprite = Resources.Load<Sprite>("Image/まっぷ１画像");
     }
     public void Onclick3()
     {
