@@ -111,7 +111,7 @@ MonoBehaviour:
   attribute: 0
   move: 0.6
   dps: 1.5
-  deficult: 1
+  savedata: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
   dropList:
   - {fileID: 6428716558702387515, guid: df6b64ae7047077478185c1a6d24d6d5, type: 3}
   - {fileID: 7649200007966353947, guid: 047422bc33029c845a6a833016f3378d, type: 3}

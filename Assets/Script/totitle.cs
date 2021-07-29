@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class totitle : MonoBehaviour
+public class Totitle : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class wepon : drop
+public class Wepon : Drop
 {
     public float range = 1;//ŽË’ö”ÍˆÍ
     public bool magic;//–‚–@Žg‚¤‚©

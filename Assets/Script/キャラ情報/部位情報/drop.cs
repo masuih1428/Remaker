@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class drop : MonoBehaviour
+public class Drop : MonoBehaviour
 {
     public string partName;
     public string part;//‚Ç‚±‚Ì•”ˆÊ‚©

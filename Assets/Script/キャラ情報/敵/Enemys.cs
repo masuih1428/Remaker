@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : chara
+[System.Serializable]
+public class Enemys : CharaScript
 {
     public bool stealth = false;//ステルスかどうか
     public int attribute = 0;//キャラの属性 0が無 1が火 2が水 3が木

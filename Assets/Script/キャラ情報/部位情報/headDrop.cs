@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class headDrop : drop
+public class HeadDrop : Drop
 {
     public int defattribute = 0;//ç‘®«
     public float MatkSpeed; //–‚–@UŒ‚‘¬“x
 
-    headDrop()
+    HeadDrop()
     {
         this.part = "head";
     }
