@@ -10,13 +10,6 @@ public class Wepon : Drop
     public int atkattribute;//UŒ‚‘®« 0‚ª–³ 1‚ª‰Î 2‚ª… 3‚ª–Ø
     public bool heal; //ƒq[ƒ‹g‚¤‚©
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        base.Start();
-    }
-
     // Update is called once per frame
     void Update()
     {
