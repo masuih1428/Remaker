@@ -7,9 +7,4 @@ public class BodyDrop : Drop
 {
     public int block;//ブロック数
     public bool fry = false;//飛行するかどうか
-
-    BodyDrop()
-    {
-        this.part = "body";
-    }
 }

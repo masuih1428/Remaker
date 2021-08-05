@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DropArea : MonoBehaviour, IDropHandler
+public class DropAreaCreate : MonoBehaviour, IDropHandler
 {
     public SaveData saveData;
     public void OnDrop(PointerEventData eventData)
@@ -19,10 +19,10 @@ public class DropArea : MonoBehaviour, IDropHandler
             //”z’u
             GameObject dropObj = (GameObject)PrefabUtility.InstantiatePrefab(saveData.DragObj);
             dropObj.transform.SetParent(gameObject.transform, false);
-        }
-        catch (Exception e)
+        } catch (Exception e)
         {
 
         }
+
     }
 }

@@ -24,8 +24,6 @@ public class DragObj : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragH
         saveData.DragObj = (GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource
             (gameObject.transform.parent.gameObject.transform.GetChild(1).gameObject);
         Debug.Log(saveData.DragObj);
-        
-
     }
 
     public void OnDrag(PointerEventData eventData)

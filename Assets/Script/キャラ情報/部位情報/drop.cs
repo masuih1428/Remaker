@@ -16,7 +16,12 @@ public class Drop : MonoBehaviour
 
     public void Start()
     {
-
+        rareStart();
+        this.hp = (int)(this.hp * rareFloat);
+        this.atk = (int)(this.atk * rareFloat);
+        this.def = (int)(this.def * rareFloat);
+        this.mdef = (int)(this.mdef * rareFloat);
+        Debug.Log(Tostring());
     }
 
     public string Tostring()

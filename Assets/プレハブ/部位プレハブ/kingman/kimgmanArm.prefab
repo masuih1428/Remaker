@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3766863640184395809}
   - component: {fileID: 2871835539721226293}
   m_Layer: 0
-  m_Name: kimgmanHand
+  m_Name: kimgmanArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1451344f88df9334fb7a6340f7e63e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partName: kingmanHand
-  part: hand
+  partName: kingmanArm
+  part: arm
   hp: 250
   atk: 200
   def: 30

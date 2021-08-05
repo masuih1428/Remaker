@@ -8,6 +8,7 @@ public class SaveData : ScriptableObject
     [SerializeField]
     public float dificult = 1; //難易度
     public List<GameObject> drops; //ドロップ情報
+    public List<Drop> dropScript;//ドロップ情報のスクリプトのみを格納する場所
     public string stage; //選択ステージ
     public List<GameObject> humanParty1;//キャラ編成１
     public List<GameObject> humanParty2;//上同２

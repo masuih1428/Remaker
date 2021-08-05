@@ -5,18 +5,18 @@ using UnityEngine;
 public class StageSelect : MonoBehaviour
 {
     public SaveData saveData;
-    void SelectStage1()
+    public void SelectStage1()
     {
-        saveData.stage = "‚Ü‚Á‚Õ3";
+        saveData.stage = "‘Œ´";
     }
 
-    void SelectStage2()
+    public void SelectStage2()
     {
-
+        saveData.stage = "ŠCŠİ";
     }
 
-    void SelectStage3()
+    public void SelectStage3()
     {
-
+        saveData.stage = "‰ÎR";
     }
 }
