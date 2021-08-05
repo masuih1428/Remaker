@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class charaMake : MonoBehaviour
+public class CharaMake : MonoBehaviour
 {
     public List<GameObject> drops;//1番目から頭、体、足、手、武器の順で格納されている
     // Start is called before the first frame update

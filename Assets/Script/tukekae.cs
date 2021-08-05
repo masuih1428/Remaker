@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class tukekae : MonoBehaviour
+public class Tukekae : MonoBehaviour
 {
     public GameObject icon;
     void Start()

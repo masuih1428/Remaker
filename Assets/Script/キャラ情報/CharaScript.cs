@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class chara: MonoBehaviour
+[System.Serializable]
+public class CharaScript : MonoBehaviour
 {
     //キャラ名
     public string charaName;
@@ -12,7 +13,9 @@ public class chara: MonoBehaviour
     public int max_atk;
     public int max_def;
     public int max_mdef;
+
     public const int mdef_max = 90;
+
     public int hp;
     public int atk;
     public int def;
@@ -23,4 +26,9 @@ public class chara: MonoBehaviour
     public bool magic = false;//マジック使うか
     public bool fry = false;//飛行するか
     
+    public string ToString()
+    {
+        return "name:\n" + this.charaName + "\nhp:" + this.max_hp + "\natk:" + this.max_atk +
+            "\ndef:" + this.max_def + "\nmdef:" + this.max_mdef;
+    }
 }

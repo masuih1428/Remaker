@@ -19,7 +19,7 @@ public class PanelControl : MonoBehaviour
         for (int i = 0; i < saveData.drops.Count; i++)
         {
             GameObject panelObj = (GameObject)Instantiate(panel);
-            switch (saveData.drops[i].GetComponent<drop>().part)
+            switch (saveData.drops[i].GetComponent<Drop>().part)
             {
                 case "head":
                     panelObj.transform.SetParent(headContent.transform, false);
@@ -40,7 +40,7 @@ public class PanelControl : MonoBehaviour
             
             GameObject dropObj = (GameObject)Instantiate(saveData.drops[i],panelObj.transform);
             dropObj.transform.parent.SetParent(panelObj.transform, false);
-            drop drop = dropObj.GetComponent<drop>();//ドロップスクリプトを取得
+            Drop drop = dropObj.GetComponent<Drop>();//ドロップスクリプトを取得
             drop.rareStart();
             dropObj.SetActive(false);//画面から消去
             GameObject nakamiImage = panelObj.transform.GetChild(0).gameObject;//panelの中のnakamiImageを取得

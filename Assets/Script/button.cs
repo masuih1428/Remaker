@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class button : MonoBehaviour
+public class Button : MonoBehaviour
 {
     
 

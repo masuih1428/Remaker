@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class panelstatus : MonoBehaviour
+public class Panelstatus : MonoBehaviour
 {
     public GameObject nakami;
     public GameObject textPanel;
     public GameObject image;
+    public Sprite spriteImage;
 
     // Start is called before the first frame update
     void Start()
@@ -22,26 +23,51 @@ public class panelstatus : MonoBehaviour
 
     }
 
-    public void Onclick()
+    public void DropOnclick()
     {
         try
         {
             GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
-            drop script = obj.GetComponent<drop>();
+            Drop script = obj.GetComponent<Drop>();
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
             //ステータスパネルの内容の変更
             Text text = obj1.GetComponent<Text>();
             text.text = script.Tostring();
             //キャラ画像の表示
             image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
-            image.GetComponent<Image>().SetOpacity(1.0f);
             return;
         } catch (Exception e)
         {
             Debug.Log(e.Data);
         }
         textClear();
+        imageClear();
+    }
+
+    public void HumanOnclick()
+    {
+        try
+        {
+            GameObject obj = nakami.transform.GetChild(1).gameObject;
+            // Debug.Log(obj);
+            CharaScript script = obj.GetComponent<CharaScript>();
+            Debug.Log(script);
+            GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
+            //ステータスパネルの内容の変更
+            Debug.Log(obj1);
+            Text text = obj1.GetComponent<Text>();
+            text.text = script.ToString();
+            //キャラ画像の表示
+            image.GetComponent<Image>().sprite = obj.GetComponent<SpriteRenderer>().sprite;
+            return;
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e);
+        }
+        textClear();
+        imageClear();
     }
 
     public void textClear()
@@ -51,7 +77,10 @@ public class panelstatus : MonoBehaviour
         Text text1 = obj2.GetComponent<Text>();
         //テキストの初期化
         text1.text = "";
-        //キャラ画像の非表示
-        image.GetComponent<Image>().SetOpacity(0.0f);
+    }
+
+    public void imageClear()
+    {
+        image.GetComponent<Image>().sprite = spriteImage;
     }
 }

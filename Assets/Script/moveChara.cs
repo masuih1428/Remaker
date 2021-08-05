@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moveChara : MonoBehaviour
+public class MoveChara : MonoBehaviour
 {
     // 2Dリジッドボディを受け取る変数
     Rigidbody2D rb2D;
