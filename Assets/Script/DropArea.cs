@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Collections;
 
 public class DropArea : MonoBehaviour, IDropHandler
 {
@@ -25,4 +26,9 @@ public class DropArea : MonoBehaviour, IDropHandler
 
         }
     }
+
+
+
+
+
 }
