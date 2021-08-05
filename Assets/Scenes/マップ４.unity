@@ -2973,7 +2973,6 @@ GameObject:
   m_Component:
   - component: {fileID: 512155623}
   - component: {fileID: 512155622}
-  - component: {fileID: 512155621}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2981,14 +2980,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &512155621
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512155620}
-  m_Enabled: 1
 --- !u!20 &512155622
 Camera:
   m_ObjectHideFlags: 0
@@ -12526,7 +12517,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1317950543
