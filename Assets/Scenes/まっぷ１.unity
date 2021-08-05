@@ -2682,7 +2682,6 @@ GameObject:
   m_Component:
   - component: {fileID: 443628024}
   - component: {fileID: 443628023}
-  - component: {fileID: 443628022}
   - component: {fileID: 443628025}
   m_Layer: 0
   m_Name: Main Camera
@@ -2691,14 +2690,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &443628022
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443628021}
-  m_Enabled: 1
 --- !u!20 &443628023
 Camera:
   m_ObjectHideFlags: 0
@@ -40058,7 +40049,7 @@ Tilemap:
       - {fileID: 7196270143389622831, guid: ea3d66a7edd9d46d38e40be89ae8d3cf, type: 3}
       - {fileID: 6029957480157117390, guid: ea3d66a7edd9d46d38e40be89ae8d3cf, type: 3}
       - {fileID: -2507161886035769597, guid: ea3d66a7edd9d46d38e40be89ae8d3cf, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 32, y: 5, z: 0}
