@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 38680827}
   - component: {fileID: 38680826}
   - component: {fileID: 38680830}
+  - component: {fileID: 38680831}
   m_Layer: 5
   m_Name: player1 (4)
   m_TagString: Untagged
@@ -241,6 +242,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 38680831}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &38680828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +305,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &38680831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38680824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1018963801}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &62441316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1818,7 @@ GameObject:
   - component: {fileID: 226626141}
   - component: {fileID: 226626140}
   - component: {fileID: 226626144}
+  - component: {fileID: 226626145}
   m_Layer: 5
   m_Name: player1 (5)
   m_TagString: Untagged
@@ -1890,6 +1918,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 226626145}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &226626142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1941,6 +1981,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &226626145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226626138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1478291659}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &234292299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +2009,7 @@ GameObject:
   - component: {fileID: 234292302}
   - component: {fileID: 234292301}
   - component: {fileID: 234292305}
+  - component: {fileID: 234292306}
   m_Layer: 5
   m_Name: player1 (11)
   m_TagString: Untagged
@@ -2054,6 +2109,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 234292306}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &234292303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2105,6 +2172,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &234292306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234292299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 626340486}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &257336106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2371,7 @@ GameObject:
   - component: {fileID: 302725155}
   - component: {fileID: 302725154}
   - component: {fileID: 302725158}
+  - component: {fileID: 302725159}
   m_Layer: 5
   m_Name: player1 (8)
   m_TagString: Untagged
@@ -2389,6 +2471,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 302725159}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &302725156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2440,6 +2534,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &302725159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302725152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1328683158}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &322712832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2562,7 @@ GameObject:
   - component: {fileID: 322712835}
   - component: {fileID: 322712834}
   - component: {fileID: 322712838}
+  - component: {fileID: 322712839}
   m_Layer: 5
   m_Name: player1 (5)
   m_TagString: Untagged
@@ -2553,6 +2662,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 322712839}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &322712836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2604,6 +2725,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &322712839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322712832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1474361637}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &346113791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,6 +2753,7 @@ GameObject:
   - component: {fileID: 346113794}
   - component: {fileID: 346113793}
   - component: {fileID: 346113797}
+  - component: {fileID: 346113798}
   m_Layer: 5
   m_Name: player1 (9)
   m_TagString: Untagged
@@ -2717,6 +2853,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 346113798}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &346113795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,6 +2916,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &346113798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346113791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 625643148}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &352075979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2944,7 @@ GameObject:
   - component: {fileID: 352075982}
   - component: {fileID: 352075981}
   - component: {fileID: 352075985}
+  - component: {fileID: 352075986}
   m_Layer: 5
   m_Name: player1 (3)
   m_TagString: Untagged
@@ -2881,6 +3044,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 352075986}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &352075983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2932,6 +3107,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &352075986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352075979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1635449055}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &353387086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2946,6 +3135,7 @@ GameObject:
   - component: {fileID: 353387089}
   - component: {fileID: 353387088}
   - component: {fileID: 353387092}
+  - component: {fileID: 353387093}
   m_Layer: 5
   m_Name: player1 (2)
   m_TagString: Untagged
@@ -3045,6 +3235,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 353387093}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &353387090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3096,6 +3298,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &353387093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353387086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 812060696}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &354348207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3326,7 @@ GameObject:
   - component: {fileID: 354348210}
   - component: {fileID: 354348209}
   - component: {fileID: 354348213}
+  - component: {fileID: 354348214}
   m_Layer: 5
   m_Name: player1
   m_TagString: Untagged
@@ -3209,6 +3426,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 354348214}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &354348211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3260,6 +3489,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &354348214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354348207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1443178060}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &364342766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,6 +4476,7 @@ GameObject:
   - component: {fileID: 635515416}
   - component: {fileID: 635515415}
   - component: {fileID: 635515419}
+  - component: {fileID: 635515420}
   m_Layer: 5
   m_Name: player1 (2)
   m_TagString: Untagged
@@ -4332,6 +4576,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 635515420}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &635515417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4383,6 +4639,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &635515420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635515413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 885732848}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &641346329
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,6 +5208,7 @@ GameObject:
   - component: {fileID: 818478720}
   - component: {fileID: 818478719}
   - component: {fileID: 818478723}
+  - component: {fileID: 818478724}
   m_Layer: 5
   m_Name: player1 (6)
   m_TagString: Untagged
@@ -5037,6 +5308,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 818478724}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818478721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5088,6 +5371,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &818478724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818478717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1179227120}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1001 &820281046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5475,6 +5772,7 @@ GameObject:
   - component: {fileID: 960566899}
   - component: {fileID: 960566898}
   - component: {fileID: 960566902}
+  - component: {fileID: 960566903}
   m_Layer: 5
   m_Name: player1 (14)
   m_TagString: Untagged
@@ -5574,6 +5872,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 960566903}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &960566900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,6 +5935,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &960566903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960566896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1375052625}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &982557885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,6 +5963,7 @@ GameObject:
   - component: {fileID: 982557888}
   - component: {fileID: 982557887}
   - component: {fileID: 982557891}
+  - component: {fileID: 982557892}
   m_Layer: 5
   m_Name: player1
   m_TagString: Untagged
@@ -5738,6 +6063,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 982557892}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &982557889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5789,6 +6126,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &982557892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982557885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 62441316}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &984137181
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,6 +6536,7 @@ GameObject:
   - component: {fileID: 1060242079}
   - component: {fileID: 1060242078}
   - component: {fileID: 1060242082}
+  - component: {fileID: 1060242083}
   m_Layer: 5
   m_Name: player1 (12)
   m_TagString: Untagged
@@ -6284,6 +6636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1060242083}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1060242080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6335,6 +6699,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1060242083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060242076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 364574394}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1122994763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,6 +6727,7 @@ GameObject:
   - component: {fileID: 1122994766}
   - component: {fileID: 1122994765}
   - component: {fileID: 1122994769}
+  - component: {fileID: 1122994770}
   m_Layer: 5
   m_Name: player1 (6)
   m_TagString: Untagged
@@ -6448,6 +6827,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1122994770}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1122994767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6499,6 +6890,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1122994770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122994763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 494333880}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1156142444
 GameObject:
   m_ObjectHideFlags: 0
@@ -6654,6 +7059,7 @@ GameObject:
   - component: {fileID: 1205039588}
   - component: {fileID: 1205039587}
   - component: {fileID: 1205039591}
+  - component: {fileID: 1205039592}
   m_Layer: 5
   m_Name: player1 (10)
   m_TagString: Untagged
@@ -6753,6 +7159,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1205039592}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205039589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6804,6 +7222,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1205039592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205039585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 641346329}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1237559326
 GameObject:
   m_ObjectHideFlags: 0
@@ -6898,6 +7330,7 @@ GameObject:
   - component: {fileID: 1302242744}
   - component: {fileID: 1302242743}
   - component: {fileID: 1302242747}
+  - component: {fileID: 1302242748}
   m_Layer: 5
   m_Name: player1 (1)
   m_TagString: Untagged
@@ -6997,6 +7430,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1302242748}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1302242745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7048,6 +7493,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1302242748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302242741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 173130240}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1327814377
 GameObject:
   m_ObjectHideFlags: 0
@@ -7062,6 +7521,7 @@ GameObject:
   - component: {fileID: 1327814380}
   - component: {fileID: 1327814379}
   - component: {fileID: 1327814383}
+  - component: {fileID: 1327814384}
   m_Layer: 5
   m_Name: player1 (3)
   m_TagString: Untagged
@@ -7161,6 +7621,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1327814384}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1327814381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7212,6 +7684,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1327814384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327814377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 704981355}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1328683158
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,6 +8126,7 @@ GameObject:
   - component: {fileID: 1472396544}
   - component: {fileID: 1472396543}
   - component: {fileID: 1472396547}
+  - component: {fileID: 1472396548}
   m_Layer: 5
   m_Name: player1 (7)
   m_TagString: Untagged
@@ -7739,6 +8226,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1472396548}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1472396545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7790,6 +8289,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1472396548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472396541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 812469604}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1474361637
 GameObject:
   m_ObjectHideFlags: 0
@@ -8346,6 +8859,7 @@ GameObject:
   - component: {fileID: 1718172902}
   - component: {fileID: 1718172901}
   - component: {fileID: 1718172905}
+  - component: {fileID: 1718172906}
   m_Layer: 5
   m_Name: player1 (15)
   m_TagString: Untagged
@@ -8445,6 +8959,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1718172906}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1718172903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8496,6 +9022,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1718172906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718172899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1910377539}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1772998937
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,6 +9050,7 @@ GameObject:
   - component: {fileID: 1772998940}
   - component: {fileID: 1772998939}
   - component: {fileID: 1772998943}
+  - component: {fileID: 1772998944}
   m_Layer: 5
   m_Name: player1 (7)
   m_TagString: Untagged
@@ -8609,6 +9150,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1772998944}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1772998941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8660,6 +9213,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1772998944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772998937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1237559326}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &1833896806
 GameObject:
   m_ObjectHideFlags: 0
@@ -8792,6 +9359,7 @@ GameObject:
   - component: {fileID: 1976864499}
   - component: {fileID: 1976864498}
   - component: {fileID: 1976864502}
+  - component: {fileID: 1976864503}
   m_Layer: 5
   m_Name: player1 (1)
   m_TagString: Untagged
@@ -8891,6 +9459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1976864503}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1976864500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8942,6 +9522,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &1976864503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976864496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 481459323}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &2005162219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8956,6 +9550,7 @@ GameObject:
   - component: {fileID: 2005162222}
   - component: {fileID: 2005162221}
   - component: {fileID: 2005162225}
+  - component: {fileID: 2005162226}
   m_Layer: 5
   m_Name: player1 (4)
   m_TagString: Untagged
@@ -9055,6 +9650,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2005162226}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2005162223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9106,6 +9713,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &2005162226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005162219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1641002651}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &2009168637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,6 +9741,7 @@ GameObject:
   - component: {fileID: 2009168640}
   - component: {fileID: 2009168639}
   - component: {fileID: 2009168643}
+  - component: {fileID: 2009168644}
   m_Layer: 5
   m_Name: player1 (13)
   m_TagString: Untagged
@@ -9219,6 +9841,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2009168644}
+        m_TargetAssemblyTypeName: DClick, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2009168641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9270,6 +9904,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+--- !u!114 &2009168644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009168637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466b04ee95c32eb4b95b0d22c1a697a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imageobj: {fileID: 1434610150}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &2044055241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1366478826227901985, guid: 97953492ca7b28a4a89ec14594818269, type: 3}

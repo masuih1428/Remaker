@@ -22,7 +22,7 @@ public class PanelControl : MonoBehaviour
         for (int i = 0; i < saveData.drops.Count; i++)
         {
             string assetPath = "Assets/Resources/ドロップ情報/";
-            GameObject panelObj = (GameObject)PrefabUtility.InstantiatePrefab(dropPanel);
+            GameObject panelObj = (GameObject)Instantiate(dropPanel);
             switch (saveData.drops[i].GetComponent<Drop>().part)
             {
                 case "head":
@@ -42,7 +42,7 @@ public class PanelControl : MonoBehaviour
                     break;
             }
             
-            GameObject dropObj = (GameObject)Instantiate(saveData.drops[i],panelObj.transform);
+            GameObject dropObj = (GameObject)PrefabUtility.InstantiatePrefab(saveData.drops[i],panelObj.transform);
             dropObj.transform.parent.SetParent(panelObj.transform, false);
             Drop drop = dropObj.GetComponent<Drop>();//ドロップスクリプトを取得
             drop.Start();
