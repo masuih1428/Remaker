@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/shop.unity
+    guid: 325f64d91e1570e4ab9524ba9042e66c
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -23,12 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/score.unity
     guid: 4a01b06da56e91d4a836e59bcc2b0feb
-  - enabled: 1
-    path: Assets/Scenes/shop.unity
-    guid: 325f64d91e1570e4ab9524ba9042e66c
-  - enabled: 1
-    path: "Assets/Scenes/\u30AD\u30E3\u30E9\u4E00\u89A7.unity"
-    guid: 72e699820ffb4ae4da44ddbac72f5c89
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: "Assets/Scenes/\u30AD\u30E3\u30E9\u7DE8\u6210\u753B\u9762.unity"
     guid: 9a2eb17f3e7792c488dc0c6bc07cd5a3
@@ -38,9 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B8.unity"
     guid: 44093a4e19e330546acd9c2eeafc232b
-  - enabled: 1
-    path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B8\u9078\u629E\u753B\u9762.unity"
-    guid: b0ef358578ee41a4ebf2a076504ccbec
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: "Assets/Scenes/\u30DB\u30FC\u30E0.unity"
     guid: 5c5eb08e8391b394ba7e0a7a85de7333

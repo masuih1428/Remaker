@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class button : MonoBehaviour
 {
-    
-
+   
 
 
     // Start is called before the first frame update
@@ -28,7 +27,9 @@ public class button : MonoBehaviour
     // ボタンをクリックするとBattleSceneに移動します
     public void ButtonClicked()
     {
+       
+        
+    SceneManager.LoadScene("ホーム");
 
-        SceneManager.LoadScene("ホーム");
     }
 }    
