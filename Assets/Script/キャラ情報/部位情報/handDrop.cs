@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class handDrop : drop
+public class HandDrop : Drop
 {
     public float atkSpeed;//•¨—UŒ‚‘¬“x
     public bool wepon = false; //•Ší‚ª‘•”õ‰Â”\‚©
 
-    handDrop()
+    HandDrop()
     {
         this.part = "hand";
     }

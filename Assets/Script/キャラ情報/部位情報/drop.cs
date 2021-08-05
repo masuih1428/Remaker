@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class drop : MonoBehaviour
+public class Drop : MonoBehaviour
 {
     public string partName;
     public string part;//‚Ç‚±‚Ì•”ˆÊ‚©
@@ -16,7 +16,12 @@ public class drop : MonoBehaviour
 
     public void Start()
     {
-
+        rareStart();
+        this.hp = (int)(this.hp * rareFloat);
+        this.atk = (int)(this.atk * rareFloat);
+        this.def = (int)(this.def * rareFloat);
+        this.mdef = (int)(this.mdef * rareFloat);
+        Debug.Log(Tostring());
     }
 
     public string Tostring()

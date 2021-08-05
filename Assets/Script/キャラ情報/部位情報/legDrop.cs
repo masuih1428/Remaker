@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class legDrop : drop
+public class LegDrop : Drop
 {
     public int waitTime; //ÄoŒ‚‰Â”\ŠÔ
 
-    legDrop()
+    LegDrop()
     {
         this.part = "leg";
     }

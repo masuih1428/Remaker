@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;     //UIを使用可能にする
 
-public class fadein : MonoBehaviour
+public class Fadein : MonoBehaviour
 {
     public float speed = 0.01f;  //透明化の速さ
     float alfa;    //A値を操作するための変数
