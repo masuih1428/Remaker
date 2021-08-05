@@ -13,7 +13,9 @@ public class CharaScript : MonoBehaviour
     public int max_atk;
     public int max_def;
     public int max_mdef;
+
     public const int mdef_max = 90;
+
     public int hp;
     public int atk;
     public int def;
