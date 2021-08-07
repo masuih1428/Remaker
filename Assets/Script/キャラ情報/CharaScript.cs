@@ -28,7 +28,7 @@ public class CharaScript : MonoBehaviour
     
     public string ToString()
     {
-        return "name:\n" + this.charaName + "\nhp:" + this.max_hp + "\natk:" + this.max_atk +
-            "\ndef:" + this.max_def + "\nmdef:" + this.max_mdef;
+        return "name:\n" + this.charaName + "\nhp:" + this.hp + "\natk:" + this.atk +
+            "\ndef:" + this.def + "\nmdef:" + this.mdef;
     }
 }

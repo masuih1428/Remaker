@@ -22,19 +22,19 @@ public class Unit : CharaScript
     private Enemys enemy;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         //ステータス設定
         hp = head.hp + body.hp + hand.hp + leg.hp+wepon.hp;
         atk = head.atk + body.atk + hand.atk + leg.atk + wepon.atk;
         def = head.def + body.def + hand.def + leg.def + wepon.def;
         mdef = head.mdef + body.mdef + hand.mdef + leg.mdef + wepon.mdef;
+        magic = wepon.magic;
+        fry = body.fry;
         //HPバー設定
         hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
         hpSlider.value = 1f;
         StartCoroutine("UpdateUnitHPValue");
-
-
     }
 
     // Update is called once per frame
