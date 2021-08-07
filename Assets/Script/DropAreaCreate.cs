@@ -19,6 +19,19 @@ public class DropAreaCreate : MonoBehaviour, IDropHandler
             partName = null;
         }
 
+        if (partName == null)
+        {
+            try
+            {
+
+                partName = eventData.pointerDrag.transform.parent.gameObject.transform.GetChild(1).gameObject.GetComponent<CharaScript>().charaName;
+            }
+            catch (Exception e)
+            {
+            }
+        }
+
+
         if (partName != partIconData)
         {
             return;//パーツが違う時には終了する

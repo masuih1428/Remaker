@@ -108,5 +108,5 @@ MonoBehaviour:
   mdef: 5
   rareFloat: 1
   rare: normal
-  block: 2
+  max_block: 0
   fry: 0

@@ -103,8 +103,10 @@ MonoBehaviour:
   mdef: 5
   rareFloat: 1
   rare: normal
+  weponType: 0
   range: 1
   magic: 1
   atkSpeed: 1
   atkattribute: 0
   heal: 1
+  ballet: {fileID: 0}

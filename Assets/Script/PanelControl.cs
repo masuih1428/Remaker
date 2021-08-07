@@ -23,6 +23,7 @@ public class PanelControl : MonoBehaviour
         {
             string assetPath = "Assets/Resources/ƒhƒƒbƒvî•ñ/";
             GameObject panelObj = (GameObject)Instantiate(dropPanel);
+            Debug.Log(saveData.drops[i]);
             switch (saveData.drops[i].GetComponent<Drop>().part)
             {
                 case "head":
