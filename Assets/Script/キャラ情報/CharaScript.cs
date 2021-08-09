@@ -8,6 +8,9 @@ public class CharaScript : MonoBehaviour
     //キャラ名
     public string charaName;
 
+    //キャラの分類
+    public string name = "human";
+
     //基礎ステータス
     public int max_hp;
     public int max_atk;

@@ -24,7 +24,7 @@ public class DropAreaCreate : MonoBehaviour, IDropHandler
             try
             {
 
-                partName = eventData.pointerDrag.transform.parent.gameObject.transform.GetChild(1).gameObject.GetComponent<CharaScript>().charaName;
+                partName = eventData.pointerDrag.transform.parent.gameObject.transform.GetChild(1).gameObject.GetComponent<CharaScript>().name;
             }
             catch (Exception e)
             {
