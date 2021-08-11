@@ -40,12 +40,14 @@ public class PanelControl : MonoBehaviour
                     panelObj.transform.SetParent(weponContent.transform, false);
                     break;
             }
-            
-            GameObject dropObj = (GameObject)Instantiate(saveData.drops[i],panelObj.transform);
+
+            GameObject dropObj = (GameObject)PrefabUtility.InstantiatePrefab(saveData.drops[i], panelObj.transform);
             dropObj.transform.parent.SetParent(panelObj.transform, false);
+            Drop drop = dropObj.GetComponent<Drop>();//ドロップスクリプトを取得
+            drop.rareStart();
             dropObj.SetActive(false);//画面から消去
             GameObject nakamiImage = panelObj.transform.GetChild(0).gameObject;//panelの中のnakamiImageを取得
-            SpriteRenderer spriteRenderer =  dropObj.GetComponent<SpriteRenderer>();//dropのimageを取得
+            SpriteRenderer spriteRenderer = dropObj.GetComponent<SpriteRenderer>();//dropのimageを取得
             Image image = nakamiImage.GetComponent<Image>();
             image.sprite = spriteRenderer.sprite;
         }
@@ -70,6 +72,6 @@ public class PanelControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

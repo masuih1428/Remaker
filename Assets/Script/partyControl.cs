@@ -41,6 +41,11 @@ public class PartyControl : MonoBehaviour
         GameObject game = null;
         for (int j = 0; j < party.Count; j++)
         {
+            if (party[j] == null)
+            {
+                continue;
+            }
+
             switch(partyNum)
             {
                 case 1:
@@ -61,7 +66,6 @@ public class PartyControl : MonoBehaviour
             GameObject humanObj = (GameObject)PrefabUtility.InstantiatePrefab(party[j]);
             humanObj.transform.SetParent(gameChild1.transform, false);
             humanObj.SetActive(false);
-
         }
     }
 }

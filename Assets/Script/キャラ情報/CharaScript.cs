@@ -8,12 +8,17 @@ public class CharaScript : MonoBehaviour
     //キャラ名
     public string charaName;
 
+    //キャラの分類
+    public string name = "human";
+
     //基礎ステータス
     public int max_hp;
     public int max_atk;
     public int max_def;
     public int max_mdef;
+
     public const int mdef_max = 90;
+
     public int hp;
     public int atk;
     public int def;
@@ -26,7 +31,7 @@ public class CharaScript : MonoBehaviour
     
     public string ToString()
     {
-        return "name:\n" + this.charaName + "\nhp:" + this.max_hp + "\natk:" + this.max_atk +
-            "\ndef:" + this.max_def + "\nmdef:" + this.max_mdef;
+        return "name:\n" + this.charaName + "\nhp:" + this.hp + "\natk:" + this.atk +
+            "\ndef:" + this.def + "\nmdef:" + this.mdef;
     }
 }
