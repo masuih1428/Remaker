@@ -486,7 +486,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1170207205}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
         m_MethodName: ButtonClicked
         m_Mode: 1
         m_Arguments:
