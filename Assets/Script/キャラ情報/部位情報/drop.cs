@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Drop : MonoBehaviour
 {
+    public int cost;
     public string partName;
     public string part;//‚Ç‚±‚Ì•”ˆÊ‚©
     public int hp;

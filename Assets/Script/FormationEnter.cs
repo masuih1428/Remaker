@@ -50,15 +50,18 @@ public class FormationEnter : MonoBehaviour
             }
 
             //çXêVèàóù
-            GameObject gameChild1 = game.transform.GetChild(j).gameObject;
-            GameObject gameChild2 = gameChild1.transform.GetChild(1).gameObject;
-            Debug.Log((GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource(gameChild2));
+
             try
             {
+                GameObject gameChild1 = game.transform.GetChild(j).gameObject;
+                GameObject gameChild2 = gameChild1.transform.GetChild(1).gameObject;
+                Debug.Log((GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource(gameChild2));
                 party[j] = ((GameObject)PrefabUtility.GetCorrespondingObjectFromOriginalSource(gameChild2));
             } catch (Exception e)
             {
                 Debug.Log(e);
+                //ÇªÇ±Ç…ÇÕâΩÇ‡Ç»Ç¢ÇÃÇ≈continue
+                continue;
             }
         }
         // åªç›ÇÃSceneÇéÊìæ

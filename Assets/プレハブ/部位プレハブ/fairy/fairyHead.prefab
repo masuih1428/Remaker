@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336c8ab507d61984392480ecbefb27dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 25
   partName: fairyHead
   part: head
   hp: 200
