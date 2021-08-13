@@ -12,6 +12,11 @@ public class Unit : CharaScript
     public HandDrop hand;//手
     public LegDrop leg;//足
     public Wepon wepon;//武器
+    public GameObject headObj;
+    public GameObject bodyObj;
+    public GameObject handObj;
+    public GameObject legObj;
+    public GameObject weponObj;
 
     public List<Enemys> blockEnemy;//ブロックしているEnemy
 
@@ -31,6 +36,7 @@ public class Unit : CharaScript
         mdef = head.mdef + body.mdef + hand.mdef + leg.mdef + wepon.mdef;
         magic = wepon.magic;
         fry = body.fry;
+        Cost = head.cost + body.cost + hand.cost + leg.cost;
         //HPバー設定
         hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
         hpSlider.value = 1f;
@@ -151,6 +157,21 @@ public class Unit : CharaScript
                 arrow.targetEnemy = collider.GetComponent<Enemys>();
             }
         }
+    }
+
+    public void setStatus()
+    {
+        //ステータス設定
+        hp = head.hp + body.hp + hand.hp + leg.hp + wepon.hp;
+        atk = head.atk + body.atk + hand.atk + leg.atk + wepon.atk;
+        def = head.def + body.def + hand.def + leg.def + wepon.def;
+        mdef = head.mdef + body.mdef + hand.mdef + leg.mdef + wepon.mdef;
+        magic = wepon.magic;
+        fry = body.fry;
+        Cost = head.cost + body.cost + hand.cost + leg.cost;
+        //HPバー設定
+        hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
+        hpSlider.value = 1f;
     }
 
 }

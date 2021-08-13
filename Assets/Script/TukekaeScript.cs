@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Seisei : MonoBehaviour
+public class TukekaeScript : MonoBehaviour
 {
     public GameObject headObj;//シーンから取得してきたオブジェクトを入れる変数
     public GameObject bodyObj;
@@ -24,6 +24,7 @@ public class Seisei : MonoBehaviour
     private GameObject weponOri;
     private Unit unitScript;
     private GameObject unit;
+    public GameObject humanIcon;
     public void OnClick()
     {
         //Unit unitScript = UnitModel.GetComponent<Unit>();
@@ -31,7 +32,7 @@ public class Seisei : MonoBehaviour
         try
         {
             //オブジェクトの生成
-            unit = Instantiate(UnitModel);
+            unit = PrefabUtility.GetCorrespondingObjectFromOriginalSource(humanIcon.transform.GetChild(1).gameObject);
             unitScript = unit.GetComponent<Unit>();
             //head
             headOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(headObj.transform.GetChild(1).gameObject);
@@ -79,9 +80,7 @@ public class Seisei : MonoBehaviour
 
         try
         {
-            unitScript.Start();
-            GameObject unitPrefab = PrefabUtility.SaveAsPrefabAsset(unit, assetPath + unitScript.charaName + saveData.HumanInt + ".prefab");
-            saveData.humanList.Add(unitPrefab);
+            unitScript.setStatus();
             //dropListから使用した素材を消去
             saveData.drops.Remove(headOri);
             saveData.drops.Remove(bodyOri);
@@ -92,6 +91,7 @@ public class Seisei : MonoBehaviour
                 saveData.drops.Remove(weponOri);
             }
 
+
             //リロード
             // 現在のSceneを取得
             Scene loadScene = SceneManager.GetActiveScene();
@@ -101,7 +101,5 @@ public class Seisei : MonoBehaviour
         {
             Debug.Log(e);
         }
-
-        Destroy(unit);
     }
 }

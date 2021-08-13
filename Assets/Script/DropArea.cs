@@ -23,7 +23,8 @@ public class DropArea : MonoBehaviour, IDropHandler
         }
         catch (Exception e)
         {
-
+            GameObject dropObj = (GameObject)PrefabUtility.InstantiatePrefab(saveData.DragObj);
+            dropObj.transform.SetParent(gameObject.transform, false);
         }
     }
 
