@@ -13,17 +13,20 @@ MonoBehaviour:
   m_Name: MainSaveData
   m_EditorClassIdentifier: 
   dificult: 1
-  drops: []
-  stage: 
+  drops:
+  - {fileID: 5688078043631334649, guid: e9ffcaaf8da84734ca18a32a2841692d, type: 3}
+  - {fileID: 5688078043631334649, guid: e9ffcaaf8da84734ca18a32a2841692d, type: 3}
+  - {fileID: 5884021382656508975, guid: b629e275a40a90f448143fc9c21de5a2, type: 3}
+  stage: "\u706B\u5C71"
   humanParty1:
-  - {fileID: 3174223549923762063, guid: 60815bb62a9120f4f88a79400c255e5a, type: 3}
-  - {fileID: 6460457404039262223, guid: af2b3bf2501cee04cbb31c577d097daf, type: 3}
-  - {fileID: 660058613884828387, guid: bf6b05b855034104f9fecc1668175e95, type: 3}
-  - {fileID: 4623483480763521570, guid: d0d1fc33268f11c4081bfa3879168aae, type: 3}
-  - {fileID: 4715431694447819879, guid: 2f34d3e9165fd9e45bef88c5dd58df57, type: 3}
-  - {fileID: 5100110368122979059, guid: 70343b71db219d04184ab496becdac2d, type: 3}
-  - {fileID: 241848590566647365, guid: 19fc8598f3fa45340ba5d4dd8d53a70d, type: 3}
-  - {fileID: 2400949036686288805, guid: 8d38aaa57d3730d4a91f4e0cfcbb148e, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
   humanParty2:
   - {fileID: 1230223779631233160, guid: 381ca8f8e86300847ad2c4fd5b53c7a6, type: 3}
   - {fileID: 1230223779631233160, guid: 381ca8f8e86300847ad2c4fd5b53c7a6, type: 3}
@@ -43,17 +46,16 @@ MonoBehaviour:
   - {fileID: 6498847534155032268, guid: cb03bf0cf8e4a3242b3ac9a78a55cd27, type: 3}
   - {fileID: 6498847534155032268, guid: cb03bf0cf8e4a3242b3ac9a78a55cd27, type: 3}
   humanList:
-  - {fileID: 6460457404039262223, guid: af2b3bf2501cee04cbb31c577d097daf, type: 3}
-  - {fileID: 660058613884828387, guid: bf6b05b855034104f9fecc1668175e95, type: 3}
-  - {fileID: 4623483480763521570, guid: d0d1fc33268f11c4081bfa3879168aae, type: 3}
-  - {fileID: 4715431694447819879, guid: 2f34d3e9165fd9e45bef88c5dd58df57, type: 3}
-  - {fileID: 5100110368122979059, guid: 70343b71db219d04184ab496becdac2d, type: 3}
-  - {fileID: 241848590566647365, guid: 19fc8598f3fa45340ba5d4dd8d53a70d, type: 3}
-  - {fileID: 96456953076433623, guid: d03a6515fb6567a47a3079669ffa9cf0, type: 3}
-  - {fileID: 2400949036686288805, guid: 8d38aaa57d3730d4a91f4e0cfcbb148e, type: 3}
-  - {fileID: 3684213184283445548, guid: bb955f34c1711c54b94be42fd0bb0cc4, type: 3}
-  - {fileID: 1648214395700414480, guid: 509f7d27297e02344b9d3aa692052dbf, type: 3}
-  - {fileID: 8703574330775985568, guid: 2020738aa9221414580bb4b53da71516, type: 3}
-  DragObj: {fileID: 8703574330775985568, guid: 2020738aa9221414580bb4b53da71516, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  - {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
+  DragObj: {fileID: 6883384843284531802, guid: 1191c59d1cce0f7468fcc0d4484f870a, type: 3}
   dropInt: 1
-  HumanInt: 10
+  HumanInt: 12
