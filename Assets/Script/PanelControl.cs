@@ -53,7 +53,7 @@ public class PanelControl : MonoBehaviour
         }
 
         //味方キャラの動的配置
-        Debug.Log(saveData.humanList.Count);
+        //Debug.Log(saveData.humanList.Count);
         for (int i = 0; i < saveData.humanList.Count; i++)
         {
             GameObject panelObj = (GameObject)Instantiate(humanPanel);
@@ -65,7 +65,6 @@ public class PanelControl : MonoBehaviour
             SpriteRenderer spriteRenderer = dropObj.GetComponent<SpriteRenderer>();//dropのimageを取得
             Image image = nakamiImage.GetComponent<Image>();
             image.sprite = spriteRenderer.sprite;
-            Debug.Log(i);
         }
     }
 

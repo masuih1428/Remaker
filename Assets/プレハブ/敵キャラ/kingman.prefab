@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: kingman
+  name: human
   max_hp: 1000
   max_atk: 200
   max_def: 150
@@ -321,6 +322,7 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
+  id: 0
   stealth: 0
   attribute: 0
   move: 1
@@ -331,6 +333,9 @@ MonoBehaviour:
   - {fileID: 1573727308133284139, guid: 093d513e47a8d4940b689c3aa83ad893, type: 3}
   - {fileID: 7666205536882328019, guid: ee95b341fa56da14f9f58579620596ee, type: 3}
   - {fileID: 6139033199839316325, guid: 810a1e60ea210ac4cba9053bdd2f7a7a, type: 3}
+  - {fileID: 8640358301017236396, guid: 29b01970e9eceb942aae761a0c36fa09, type: 3}
+  - {fileID: 2245018718998210331, guid: 8258c63f1c048e84d8a2a8222a3fe689, type: 3}
+  - {fileID: 393930711647129740, guid: 56a7fcd97a24b0b498eacca9b7582ad0, type: 3}
 --- !u!61 &5855405004597264786
 BoxCollider2D:
   m_ObjectHideFlags: 0
