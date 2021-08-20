@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5730219457898840601
 Transform:
   m_ObjectHideFlags: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336c8ab507d61984392480ecbefb27dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 0
   partName: goblinHead
   part: head
   hp: 250
@@ -102,6 +103,6 @@ MonoBehaviour:
   def: 10
   mdef: 0
   rareFloat: 1
-  rare: 
+  rare: normal
   defattribute: 0
   MatkSpeed: 0.6

@@ -385,6 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: fairy
+  name: human
   max_hp: 300
   max_atk: 120
   max_def: 50
@@ -396,6 +397,7 @@ MonoBehaviour:
   atkspeed: 1
   magic: 1
   fry: 1
+  id: 0
   stealth: 0
   attribute: 0
   move: 0.9
@@ -406,6 +408,9 @@ MonoBehaviour:
   - {fileID: 2913902561781631679, guid: 898feecb398e8014dac3b8a29ef08bf1, type: 3}
   - {fileID: 2060065296868491480, guid: 2515f2b005b3699438a7c3352758577e, type: 3}
   - {fileID: 347549646437335131, guid: b22fe7306c216aa4d8597dc516902ded, type: 3}
+  - {fileID: 7705798539241752795, guid: 59c965f68b719274591fa3a811c3b4b5, type: 3}
+  - {fileID: 6581634334036217830, guid: b8e9c5037fd8dc04283dff0eda1aec0d, type: 3}
+  - {fileID: 8640358301017236396, guid: 29b01970e9eceb942aae761a0c36fa09, type: 3}
 --- !u!50 &6778195905327987713
 Rigidbody2D:
   serializedVersion: 4

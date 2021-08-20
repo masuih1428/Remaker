@@ -17,7 +17,6 @@ public class Drop : MonoBehaviour
 
     public void Start()
     {
-        rareStart();
     }
 
     public string Tostring()
@@ -33,7 +32,6 @@ public class Drop : MonoBehaviour
         Debug.Log("Start");
         if (this.rare == "")
         {
-            Debug.Log("null");
             //レア度がnullの場合のみレア度を乱数で作成
             float r1 = Random.value;//0.0f～1.0fまでの値
             float rare = 0.3f; //レア
