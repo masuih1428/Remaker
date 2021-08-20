@@ -95,4 +95,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd45c4392750ef04390a7c4437180d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unittype: 1
+  lv: 1
+  MAX_HP: 0
+  hp: 10
+  atk: 100
+  MAX_BLOCK: 0
+  range: 1
+  atkspeed: 0.9
+  CostManey: 100
+  blockEnemy: []
+  HPUI: {fileID: 0}
   arrowPrefab: {fileID: 7698242926395144232, guid: 2894e995ad4a81548bd05ff186c20572, type: 3}

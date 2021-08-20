@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9061761208093259879}
   - component: {fileID: 9061761208093259878}
   - component: {fileID: 9061761208093259876}
+  - component: {fileID: 4456690475887492130}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 9061761208093259873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.8036053, y: -1.3780512, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 6186194536091365823, guid: 3be3d4f0c37ff434f8ae5e8688583bb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -90,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061761208093259873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53da40eca397d5f40b14f45c0ee04a63, type: 3}
   m_Name: 
@@ -117,3 +118,27 @@ MonoBehaviour:
   - {fileID: 6591597570843942178, guid: 9c7bb77048f2c174e9d4de2fb75653d0, type: 3}
   - {fileID: 7882163820428581488, guid: c612b04a71a44c941b3e2ed4569c8109, type: 3}
   - {fileID: 5726279814644621253, guid: ca48a2de118e62e44acd1776439f2cfb, type: 3}
+  route: {fileID: 0}
+--- !u!114 &4456690475887492130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061761208093259873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b3ee6aa8ede98458b4f86ea1005118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balletPrefab: {fileID: 0}
+  unit: {fileID: 0}
+  id: 0
+  MAX_HP: 1000
+  hp: 1000
+  atk: 150
+  atkspeed: 1
+  range: 0
+  speed: 1
+  gold: 100
+  route: {fileID: 0}

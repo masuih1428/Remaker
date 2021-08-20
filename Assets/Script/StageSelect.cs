@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StageSelect : MonoBehaviour
 {
@@ -10,24 +11,55 @@ public class StageSelect : MonoBehaviour
     public Image image;
     private Sprite sprite;
     [SerializeField] Image mapimg = null;
+    public static string stagecount = "0";
 
-    
+    GameObject ToMains; 
+
+    ToMain script;
+    void Start()
+    {
+
+    }
     public void OnclickButton()
     {
-        
+
         mapimg.sprite = Resources.Load<Sprite>("Image/‰ÎŽR");
+        stagecount = "‚Ü‚Á‚Õ‚R";
     }
     public void Onclick2()
     {
        
         mapimg.sprite = Resources.Load<Sprite>("Image/‚Ü‚Á‚Õ‚P‰æ‘œ");
+        stagecount = "‚Ü‚Á‚Õ‚P";
     }
     public void Onclick3()
     {
-        Debug.Log("3‚ª‰Ÿ‚³‚ê‚½");
+        mapimg.sprite = Resources.Load<Sprite>("Image/‚Ü‚Á‚Õ‚P‰æ‘œ");
+        stagecount = "‚Ü‚Á‚Õ2";
     }
     public void Onclick4()
     {
         Debug.Log("4‚ª‰Ÿ‚³‚ê‚½");
+    }
+
+    public void Onclick5()
+    {
+        if (stagecount == "0")
+        {
+            mapimg.sprite = Resources.Load<Sprite>("Image/‘I‚Ô");
+            Debug.Log("‘I‘ð‚³‚ê‚Ä‚È‚¢‚æ");
+        }
+        else
+        {
+           ToMains = GameObject.Find("tomain");
+            script = ToMains.GetComponent<ToMain>();
+
+           script.Onclick8();
+        }
+    }
+
+    public void Game()
+    {
+        SceneManager.LoadScene(stagecount);
     }
 }

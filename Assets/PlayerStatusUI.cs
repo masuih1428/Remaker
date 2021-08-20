@@ -12,6 +12,7 @@ public class PlayerStatusUI : MonoBehaviour
     void Update()
     {
         hpText.text = $"HP:{player.hp}";
-//gold‚Í•Ê‚Ì‚Æ‚±‚ë‚É
+        goldText.text = $"Gold:{player.gold}";
+        //gold‚Í•Ê‚Ì‚Æ‚±‚ë‚É
     }
 }

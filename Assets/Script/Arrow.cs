@@ -1,11 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class Arrow : MonoBehaviour
 {
     public Enemy targetEnemy;
+    [SerializeField]
+    private int atk;
     private float speed = 10;
+
+    internal void SetAtk(int atk)
+    {
+        this.atk = atk;
+    }
 
     void Update()
     {
@@ -20,12 +28,16 @@ public class Arrow : MonoBehaviour
 
         if (v.magnitude < 0.7f)
         {
-            targetEnemy.hp -= 1;
+            //Debug.Log(atk);
+            targetEnemy.hp = targetEnemy.hp - atk;
+            //Debug.Log(targetEnemy.hp);
             if (targetEnemy.hp <= 0)
             {
                 Destroy(targetEnemy.gameObject);
+                FindObjectOfType<Player>().gold += targetEnemy.gold;
             }
-            Destroy(gameObject);
+            transform.SetParent(targetEnemy.transform);
+            enabled = false;
         }
     }
 }
