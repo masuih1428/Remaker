@@ -186,6 +186,7 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 1
+  grade: 3
   id: 0
   stealth: 0
   attribute: 0
