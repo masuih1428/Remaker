@@ -825,19 +825,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 10
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Text: aho
-=======
-  m_Text: 'Re:maker
-
-'
->>>>>>> bd0d2ecb2eebb3b6d8e5b0f11cdbdd70ddbdb61b
-=======
   m_Text: 'Remaker
 
 '
->>>>>>> af0882e54781234e9062821e317341637d4616bc
 --- !u!222 &1313977954
 CanvasRenderer:
   m_ObjectHideFlags: 0
