@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dificult: 1
   drops:
-  - {fileID: 5688078043631334649, guid: e9ffcaaf8da84734ca18a32a2841692d, type: 3}
-  - {fileID: 6099865449742823837, guid: 3b39204627e81b249a046f7e02201d4e, type: 3}
-  - {fileID: 1922600015428407759, guid: 4bb0fb7462461144c8b3c8067cfcf9e8, type: 3}
-  - {fileID: 2336733756600582389, guid: 938e349de80c98f48bb0fa03541f22aa, type: 3}
-  - {fileID: 5884021382656508975, guid: b629e275a40a90f448143fc9c21de5a2, type: 3}
-  - {fileID: 2952318405062222585, guid: f794911a407d67b428e2e5dbf98a5e40, type: 3}
+  - {fileID: 972567947937542913, guid: 72102f8df696285448e92e6a4f20b039, type: 3}
+  - {fileID: 7649200007966353947, guid: 047422bc33029c845a6a833016f3378d, type: 3}
+  - {fileID: 2060065296868491480, guid: 2515f2b005b3699438a7c3352758577e, type: 3}
+  - {fileID: 8723361523998570954, guid: 7928337efb0b85042a0e7bd5df6c1e27, type: 3}
   stage: 
   humanParty1:
   - {fileID: 3073479087366604042, guid: ee70343261554aa4ea5131458602e434, type: 3}
@@ -59,6 +57,7 @@ MonoBehaviour:
   - {fileID: 1268424948687590993, guid: 8203ff2114cea0242946baee24620205, type: 3}
   - {fileID: 6514163772911588698, guid: 224d8091d7b6cc841bcbbecfb3a7567f, type: 3}
   - {fileID: 7322532824056058564, guid: a3cfeeedc009b0149a487dce862419ff, type: 3}
-  DragObj: {fileID: 2952318405062222585, guid: f794911a407d67b428e2e5dbf98a5e40, type: 3}
+  - {fileID: 2956122541271326535, guid: 4191f39cf4c24b9468af2dd829491589, type: 3}
+  DragObj: {fileID: 2060065296868491480, guid: 2515f2b005b3699438a7c3352758577e, type: 3}
   dropInt: 1
   HumanInt: 1

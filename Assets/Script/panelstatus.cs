@@ -10,7 +10,8 @@ public class Panelstatus : MonoBehaviour
     public GameObject textPanel;
     public GameObject image;
     public Sprite spriteImage;
-
+    Sale sale;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +28,36 @@ public class Panelstatus : MonoBehaviour
     {
         try
         {
+            sale = GameObject.Find("売却実行").GetComponent<Sale>();
             GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
             Drop script = obj.GetComponent<Drop>();
+            for (int i = 0; i < sale.saveData.drops.Count; i++)
+            {
+
+
+
+                if (sale.saveData.drops[i].GetComponent<Drop>().partName.Equals(script.partName))
+                {
+                  //  Debug.Log(sale.saveData.drops[i].GetComponent<Drop>().rare);
+                  //  Debug.Log(script.rare);
+                    sale.a = i;
+                    sale.text.text = script.partName;
+                    break;
+                }
+            }
+
+            //キャラ画像の表示
+            Debug.Log(sale.a);
+
+
+
+
+
+
+
+
+
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
             //ステータスパネルの内容の変更
             Text text = obj1.GetComponent<Text>();
@@ -52,7 +80,7 @@ public class Panelstatus : MonoBehaviour
             GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
             CharaScript script = obj.GetComponent<CharaScript>();
-            Debug.Log(script);
+          //  Debug.Log(script);
             GameObject obj1 = textPanel.transform.GetChild(1).gameObject;
             //ステータスパネルの内容の変更
             Debug.Log(obj1);
