@@ -176,15 +176,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2848707930413798181, guid: 6b18ed630a6529548a91fa08d393cd8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.44, y: 0.48}
+  m_Size: {x: 16.125, y: 16.927084}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &747167257742485026
@@ -225,8 +225,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.44, y: 0.48}
-    newSize: {x: 0.44, y: 0.48}
+    oldSize: {x: 16.125, y: 16.927084}
+    newSize: {x: 16.125, y: 16.927084}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: "\u898B\u3064\u304B\u3093"
+  name: human
   max_hp: 0
   max_atk: 0
   max_def: 0
@@ -264,6 +265,11 @@ MonoBehaviour:
   hand: {fileID: 5506154744574817840, guid: 3b39204627e81b249a046f7e02201d4e, type: 3}
   leg: {fileID: 4102727785713815784, guid: 938e349de80c98f48bb0fa03541f22aa, type: 3}
   wepon: {fileID: 6099912062171668849, guid: f794911a407d67b428e2e5dbf98a5e40, type: 3}
+  headObj: {fileID: 1922600015428407759, guid: 4bb0fb7462461144c8b3c8067cfcf9e8, type: 3}
+  bodyObj: {fileID: 5884021382656508975, guid: b629e275a40a90f448143fc9c21de5a2, type: 3}
+  handObj: {fileID: 6099865449742823837, guid: 3b39204627e81b249a046f7e02201d4e, type: 3}
+  legObj: {fileID: 2336733756600582389, guid: 938e349de80c98f48bb0fa03541f22aa, type: 3}
+  weponObj: {fileID: 2952318405062222585, guid: f794911a407d67b428e2e5dbf98a5e40, type: 3}
   blockEnemy: []
   HPUI: {fileID: 2676232429181557663}
 --- !u!95 &5319167503474664078

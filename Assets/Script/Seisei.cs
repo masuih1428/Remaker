@@ -35,17 +35,21 @@ public class Seisei : MonoBehaviour
             unitScript = unit.GetComponent<Unit>();
             //head
             headOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(headObj.transform.GetChild(1).gameObject);
+            unitScript.headObj = headOri;
             unitScript.head = headOri.GetComponent<HeadDrop>();
             //body
             bodyOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(bodyObj.transform.GetChild(1).gameObject);
+            unitScript.bodyObj = bodyOri;
             unitScript.body = bodyOri.GetComponent<BodyDrop>();
             //Debug.Log(bodyObj.transform.GetChild(1).gameObject.GetComponent<BodyDrop>());
             //leg
             legOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(legObj.transform.GetChild(1).gameObject);
+            unitScript.legObj = legOri;
             unitScript.leg = legOri.GetComponent<LegDrop>();
             //Debug.Log(legObj.transform.GetChild(1).gameObject.GetComponent<LegDrop>());
             //arm
             armOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(armObj.transform.GetChild(1).gameObject);
+            unitScript.handObj = armOri;
             unitScript.hand = armOri.GetComponent<HandDrop>();
             //Debug.Log(armObj.transform.GetChild(1).gameObject.GetComponent<HandDrop>());
 
@@ -54,6 +58,7 @@ public class Seisei : MonoBehaviour
             {
                 //wepon
                 weponOri = PrefabUtility.GetCorrespondingObjectFromOriginalSource(wepon.transform.GetChild(1).gameObject);
+                unitScript.weponObj = weponOri;
                 unitScript.wepon = weponOri.GetComponent<Wepon>();
                 Debug.Log(headObj.transform.GetChild(1).gameObject.GetComponent<Wepon>());
             }

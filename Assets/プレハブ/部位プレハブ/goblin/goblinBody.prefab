@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5918940815573972400
 Transform:
   m_ObjectHideFlags: 0
@@ -95,13 +95,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d613c76d7307ce429d1b3aad5fe6ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 0
   partName: goblinBody
   part: body
-  hp: 550
+  hp: 577
   atk: 20
-  def: 60
+  def: 62
   mdef: 0
-  rareFloat: 1
-  rare: 
-  block: 1
+  rareFloat: 1.05
+  rare: rare
+  max_block: 0
   fry: 0

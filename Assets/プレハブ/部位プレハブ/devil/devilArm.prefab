@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3083228897922760646
 Transform:
   m_ObjectHideFlags: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1451344f88df9334fb7a6340f7e63e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 30
   partName: devilArm
   part: arm
   hp: 350
@@ -102,6 +103,6 @@ MonoBehaviour:
   def: 25
   mdef: 5
   rareFloat: 1
-  rare: 
+  rare: normal
   atkSpeed: 0.9
   wepon: 1

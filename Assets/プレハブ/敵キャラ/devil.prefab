@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: devil
+  name: human
   max_hp: 1500
   max_atk: 300
   max_def: 100
@@ -110,6 +111,8 @@ MonoBehaviour:
   atkspeed: 1
   magic: 1
   fry: 0
+  grade: 2
+  id: 0
   stealth: 0
   attribute: 0
   move: 0.6
@@ -120,6 +123,9 @@ MonoBehaviour:
   - {fileID: 7649200007966353947, guid: 047422bc33029c845a6a833016f3378d, type: 3}
   - {fileID: 1320782599920592087, guid: 7142694be32fd454b8b429ea0e40bebf, type: 3}
   - {fileID: 1943387796208121508, guid: 46546f5e474e5ce4f8ecfb7e2a58a896, type: 3}
+  - {fileID: 6323477841361163327, guid: 994bdaed37772e44bb27d4cf15ba6e59, type: 3}
+  - {fileID: 7056445051668591645, guid: acf3bed809d127e4dbb9d9c0e2e3f900, type: 3}
+  - {fileID: 2245018718998210331, guid: 8258c63f1c048e84d8a2a8222a3fe689, type: 3}
 --- !u!50 &-404626850773419692
 Rigidbody2D:
   serializedVersion: 4
@@ -158,7 +164,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.42, y: 0.42}
+    oldSize: {x: 4.2, y: 4.2}
     newSize: {x: 0.42, y: 0.42}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

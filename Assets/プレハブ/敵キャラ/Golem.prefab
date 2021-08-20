@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: golem
+  name: human
   max_hp: 1000
   max_atk: 150
   max_def: 250
@@ -485,6 +486,8 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
+  grade: 1
+  id: 0
   stealth: 0
   attribute: 0
   move: 0.8
@@ -495,6 +498,9 @@ MonoBehaviour:
   - {fileID: 6591597570843942178, guid: 9c7bb77048f2c174e9d4de2fb75653d0, type: 3}
   - {fileID: 7882163820428581488, guid: c612b04a71a44c941b3e2ed4569c8109, type: 3}
   - {fileID: 5726279814644621253, guid: ca48a2de118e62e44acd1776439f2cfb, type: 3}
+  - {fileID: 7172647605420309455, guid: b8fc00430b733694ebb66bd8be95a102, type: 3}
+  - {fileID: 1553311769892583203, guid: 9948495d8d67feb40a792752dad986c0, type: 3}
+  - {fileID: 6581634334036217830, guid: b8e9c5037fd8dc04283dff0eda1aec0d, type: 3}
 --- !u!50 &245143845701141564
 Rigidbody2D:
   serializedVersion: 4

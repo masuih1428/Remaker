@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaName: goblin
+  name: human
   max_hp: 250
   max_atk: 100
   max_def: 0
@@ -360,6 +361,8 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
+  grade: 1
+  id: 0
   stealth: 0
   attribute: 0
   move: 1
@@ -370,6 +373,10 @@ MonoBehaviour:
   - {fileID: 5730219457898840602, guid: 80c61e0b972a04b409bdf0f024d16f53, type: 3}
   - {fileID: 3639835474805804823, guid: 3fd5250cc822aa241aef14f907c987ab, type: 3}
   - {fileID: 5918940815573969487, guid: 24ba3ac4675a09641af92e615fa1b269, type: 3}
+  - {fileID: 393930711647129740, guid: 56a7fcd97a24b0b498eacca9b7582ad0, type: 3}
+  - {fileID: 8723361523998570954, guid: 7928337efb0b85042a0e7bd5df6c1e27, type: 3}
+  - {fileID: 2891907367148967057, guid: 68e95529a45c5c641812441a79b4fb32, type: 3}
+  - {fileID: 420163120572066567, guid: c980a8f53f6ac1044b26b527baba77a5, type: 3}
 --- !u!61 &8209680904814787212
 BoxCollider2D:
   m_ObjectHideFlags: 0

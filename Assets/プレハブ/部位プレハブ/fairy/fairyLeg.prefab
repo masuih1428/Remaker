@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &763897202587810490
 Transform:
   m_ObjectHideFlags: 0
@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f3fdea24ebdb34888a5ecfefe9c9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 25
   partName: fairyLeg
   part: leg
   hp: 300
@@ -102,5 +103,5 @@ MonoBehaviour:
   def: 30
   mdef: 5
   rareFloat: 1
-  rare: 
+  rare: normal
   waitTime: -10

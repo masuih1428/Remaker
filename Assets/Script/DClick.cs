@@ -60,7 +60,7 @@ public class DClick : MonoBehaviour
 
     void SingleClick()
     {
-        Debug.Log("Single");
+        
     }
 
     void DoubleClick()

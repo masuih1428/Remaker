@@ -95,11 +95,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1451344f88df9334fb7a6340f7e63e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 40
   partName: dragonArm
   part: arm
-  hp: 0
-  atk: 0
-  def: 0
+  hp: 400
+  atk: 250
+  def: 30
   mdef: 0
   rareFloat: 1
   rare: 

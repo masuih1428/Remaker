@@ -3225,6 +3225,7 @@ GameObject:
   - component: {fileID: 924972196}
   - component: {fileID: 924972195}
   - component: {fileID: 924972194}
+  - component: {fileID: 924972193}
   m_Layer: 5
   m_Name: TsukekaeButton
   m_TagString: Untagged
@@ -3252,6 +3253,27 @@ RectTransform:
   m_AnchoredPosition: {x: 782.99994, y: -428}
   m_SizeDelta: {x: 276.3, y: 141.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &924972193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924972191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a079bd899b1344b8e31f3433674143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headObj: {fileID: 1551885788}
+  bodyObj: {fileID: 1037125873}
+  legObj: {fileID: 1740248999}
+  armObj: {fileID: 1657263214}
+  wepon: {fileID: 1282883453}
+  nameObj: {fileID: 985371658}
+  UnitModel: {fileID: 812524091011020167, guid: ba6459531fcc4ec4e9edaeaf0e5f558e, type: 3}
+  saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+  humanIcon: {fileID: 2004244374}
 --- !u!114 &924972194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3296,13 +3318,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 924972193}
+        m_TargetAssemblyTypeName: TukekaeScript, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9831,6 +9853,7 @@ GameObject:
   - component: {fileID: 2004244379}
   - component: {fileID: 2004244381}
   - component: {fileID: 2004244382}
+  - component: {fileID: 2004244383}
   m_Layer: 5
   m_Name: HumanIcon
   m_TagString: Untagged
@@ -9982,6 +10005,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2004244383}
+        m_TargetAssemblyTypeName: DClickHuman, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2004244381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10003,11 +10038,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 2004244374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6033d039b0b9ef644bb3e019b4758b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: fe1ab4ca1389e734c8b5b69f1c2bd06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
   partIconData: human
+  headIcon: {fileID: 1551885788}
+  bodyIcon: {fileID: 1037125873}
+  armIcon: {fileID: 1657263214}
+  legIcon: {fileID: 1740248999}
+  weponIcon: {fileID: 1282883453}
+  text: {fileID: 985371660}
+--- !u!114 &2004244383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004244374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3567333636a0f4da7f0f241388665b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headIcon: {fileID: 1551885788}
+  bodyIcon: {fileID: 1037125873}
+  armIcon: {fileID: 1657263214}
+  legIcon: {fileID: 1740248999}
+  weponIcon: {fileID: 1282883453}
+  Imageobj: {fileID: 1286757818}
+  text: {fileID: 985371660}
+  image: {fileID: 21300000, guid: 478e6cd84dd724349b47c63522ecad23, type: 3}
 --- !u!1 &2008127000 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8126507410238020566, guid: 9d8a24b7d04a6a04cae876c7a61f6f6b, type: 3}
