@@ -28,7 +28,13 @@ public class Panelstatus : MonoBehaviour
     {
         try
         {
-            sale = GameObject.Find("îÑãpé¿çs").GetComponent<Sale>();
+            try
+            {
+                sale = GameObject.Find("îÑãpé¿çs").GetComponent<Sale>();
+            } catch (Exception e)
+            {
+                Debug.Log(e);
+            }
             GameObject obj = nakami.transform.GetChild(1).gameObject;
             // Debug.Log(obj);
             Drop script = obj.GetComponent<Drop>();
@@ -67,7 +73,7 @@ public class Panelstatus : MonoBehaviour
             return;
         } catch (Exception e)
         {
-            Debug.Log(e.Data);
+            Debug.Log(e);
         }
         textClear();
         imageClear();
