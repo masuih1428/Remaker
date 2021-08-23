@@ -5,12 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class totitle : MonoBehaviour
+public class Totitle : MonoBehaviour
 {
     // Start is called before the first frame update
+ // public GameObject  gameobject = GameObject.Find("GameObject");
+   
     void Start()
     {
-        
+       // gameobject = GameObject.Find("GameObject");
+     string   name = MusicPlayer.nextname;
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class totitle : MonoBehaviour
     // ボタンをクリックするとBattleSceneに移動します
     public void ButtonClicked()
     {
-
-        SceneManager.LoadScene("タイトル");
+      
+        SceneManager.LoadScene(MusicPlayer.nextname);
     }
 }

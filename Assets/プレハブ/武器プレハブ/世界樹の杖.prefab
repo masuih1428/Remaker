@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2568875770425367411
 Transform:
   m_ObjectHideFlags: 0
@@ -95,16 +95,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335b0478845056e448c01394ab9f4bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 0
   partName: "\u4E16\u754C\u6A39\u306E\u6756"
   part: wepon
-  hp: 50
+  hp: 52
   atk: 10
   def: 0
   mdef: 5
-  rareFloat: 1
-  rare: 
+  rareFloat: 1.05
+  rare: rare
+  weponType: 0
   range: 1
   magic: 1
   atkSpeed: 1
   atkattribute: 0
   heal: 0
+  ballet: {fileID: 0}

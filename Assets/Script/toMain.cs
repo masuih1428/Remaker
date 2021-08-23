@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class toMain : MonoBehaviour
+public class ToMain : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -68,4 +68,15 @@ public class toMain : MonoBehaviour
     {
         SceneManager.LoadScene("‘fŞˆê——");
     }
+
+    public void Onclick13()
+    {
+        SceneManager.LoadScene("İ’è");
+    }
+
+    public void Onclick14()
+    {
+        SceneManager.LoadScene("”„‹p‰æ–Ê");
+    }
+
 }

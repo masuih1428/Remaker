@@ -10,7 +10,7 @@ public class StatusPanellcontroll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-                GameObject obj2 = statusPanellPrefb.transform.GetChild(1).gameObject;
+        GameObject obj2 = statusPanellPrefb.transform.GetChild(1).gameObject;
         Text text1 = obj2.GetComponent<Text>();
         text1.text = "";
     }
