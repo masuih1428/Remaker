@@ -41,6 +41,11 @@ public class MakeDrop : MonoBehaviour
             dropInstant.SetActive(false);
             PrefabUtility.SaveAsPrefabAssetAndConnect(dropInstant, "Assets/Resources/ドロップ情報/" + drop.GetComponent<Drop>().partName + (saveData.dropInt++) + ".prefab",InteractionMode.AutomatedAction);
             saveData.drops.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(dropInstant));
+
+            //UIでドロップの画像を表示するスクリプト
+
+
+
             Debug.Log(drop);
         }
     }

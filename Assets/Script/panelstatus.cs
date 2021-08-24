@@ -43,10 +43,7 @@ public class Panelstatus : MonoBehaviour
             {
                 for (int i = 0; i < sale.saveData.drops.Count; i++)
                 {
-
-
-
-                    if (sale.saveData.drops[i].GetComponent<Drop>().partName.Equals(script.partName))
+                    if (sale.saveData.drops[i].GetComponent<Drop>().partName.Equals(script.partName) && sale.saveData.drops[i].GetComponent<Drop>().rare.Equals(script.rare))
                     {
                         //  Debug.Log(sale.saveData.drops[i].GetComponent<Drop>().rare);
                         //  Debug.Log(script.rare);
