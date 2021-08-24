@@ -94,7 +94,7 @@ public class Seisei : MonoBehaviour
             Debug.Log((RuntimeAnimatorController)Resources.Load(resorcePath + "/Animation/Hero_animation " + ran + "/hero_animator " + ran));
             unit.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load(resorcePath + "/Animation/hero_animation " + ran + "/hero_animator " + ran);
             GameObject unitPrefab = PrefabUtility.SaveAsPrefabAsset(unit, assetPath + unitScript.charaName + (saveData.HumanInt++) + ".prefab");
-            saveData.humanList.Add(unitPrefab);
+            saveData.humanList.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(unitPrefab));
             //dropListÇ©ÇÁégópÇµÇΩëfçﬁÇè¡ãé
             saveData.drops.Remove(headOri);
             saveData.drops.Remove(bodyOri);
