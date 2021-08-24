@@ -25,7 +25,10 @@ public class Totitle : MonoBehaviour
     // ボタンをクリックするとBattleSceneに移動します
     public void ButtonClicked()
     {
-      
-        SceneManager.LoadScene(MusicPlayer.nextname);
+        //エラーを吐いていたので修正しましたが他の場所で副次的エラーが起きている場合は直してください
+        //SceneManager.LoadScene(MusicPlayer.nextname);
+
+        //修正部分
+        SceneManager.LoadScene("タイトル");
     }
 }

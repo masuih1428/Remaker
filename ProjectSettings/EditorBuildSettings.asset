@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/shop.unity
     guid: 325f64d91e1570e4ab9524ba9042e66c
+  - enabled: 1
+    path: "Assets/Scenes/\u30BF\u30A4\u30C8\u30EB.unity"
+    guid: 9f522686f18c0214c8366775eeec48a0
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
