@@ -66,13 +66,13 @@ public class BattleStartButton : MonoBehaviour
         switch (saveData.stage)
         {
             case "‘Œ´":
-                SceneManager.LoadScene("‚Ü‚Á‚Õ1");
+                SceneManager.LoadScene("‚Ü‚Á‚Õ‚P");
                 break;
             case "ŠCŠİ":
                 SceneManager.LoadScene("‚Ü‚Á‚Õ2");
                 break;
             case "‰ÎR":
-                SceneManager.LoadScene("‚Ü‚Á‚Õ3");
+                SceneManager.LoadScene("‚Ü‚Á‚Õ‚R");
                 break;
         }
     }

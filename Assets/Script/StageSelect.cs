@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StageSelect : MonoBehaviour
 {
@@ -11,24 +12,25 @@ public class StageSelect : MonoBehaviour
     public void SelectStage1()
     {
         saveData.stage = "ëêå¥";
-        sougenn.SetActive(true);
-        kaigan.SetActive(false);
-        kazan.SetActive(false);
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
     }
 
     public void SelectStage2()
     {
         saveData.stage = "äCä›";
-        sougenn.SetActive(false);
-        kaigan.SetActive(true);
-        kazan.SetActive(false);
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
     }
 
     public void SelectStage3()
     {
         saveData.stage = "âŒéR";
-        sougenn.SetActive(false);
-        kaigan.SetActive(false);
-        kazan.SetActive(true);
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
     }
+
 }
