@@ -61,6 +61,19 @@ public class BattleStartButton : MonoBehaviour
                 Debug.Log(e);
             }
         }
-        SceneManager.LoadScene(saveData.stage);
+
+        
+        switch (saveData.stage)
+        {
+            case "‘Œ´":
+                SceneManager.LoadScene("‚Ü‚Á‚Õ1");
+                break;
+            case "ŠCŠİ":
+                SceneManager.LoadScene("‚Ü‚Á‚Õ2");
+                break;
+            case "‰ÎR":
+                SceneManager.LoadScene("‚Ü‚Á‚Õ3");
+                break;
+        }
     }
 }
