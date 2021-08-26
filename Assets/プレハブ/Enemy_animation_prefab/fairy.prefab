@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5670944435495085661}
   - component: {fileID: 7040228652216967802}
   - component: {fileID: -8697936670102572380}
-  - component: {fileID: -1433142486196159102}
+  - component: {fileID: 7489594056430997997}
   m_Layer: 8
   m_Name: fairy
   m_TagString: Untagged
@@ -182,8 +182,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &-1433142486196159102
-BoxCollider2D:
+--- !u!58 &7489594056430997997
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -195,19 +195,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0551067, y: -0.062621236}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 0.2, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.15948904}
   serializedVersion: 2
-  m_Size: {x: 0.65740097, y: 1.00307}
-  m_EdgeRadius: 0
+  m_Radius: 0.78947437
 --- !u!1001 &8684207327500770151
 PrefabInstance:
   m_ObjectHideFlags: 0
