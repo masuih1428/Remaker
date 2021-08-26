@@ -345,7 +345,7 @@ MonoBehaviour:
   - {fileID: 2245018718998210331, guid: 8258c63f1c048e84d8a2a8222a3fe689, type: 3}
   - {fileID: 393930711647129740, guid: 56a7fcd97a24b0b498eacca9b7582ad0, type: 3}
   route: {fileID: 0}
-  HPUI: {fileID: 0}
+  HPUI: {fileID: 1301836689270045729}
   blockname: 
 --- !u!61 &5855405004597264786
 BoxCollider2D:
