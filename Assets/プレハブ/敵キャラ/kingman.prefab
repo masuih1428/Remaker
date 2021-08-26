@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 5855405004597264786}
   - component: {fileID: 4227170924161199766}
   - component: {fileID: 2011004324498983662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kingman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073479087366604042}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53da40eca397d5f40b14f45c0ee04a63, type: 3}
   m_Name: 

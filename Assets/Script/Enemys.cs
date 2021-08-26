@@ -160,8 +160,8 @@ public class Enemys : CharaScript
         yield return new WaitForSeconds(AtkInterval);
         try
         {
-            //
-            UpdateHPValue();
+            
+            //UpdateHPValue();
 
             unit.hp = unit.hp - atk;
             Debug.Log(unit.hp);

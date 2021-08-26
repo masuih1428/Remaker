@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 245143845701141564}
   - component: {fileID: 970918099950187296}
   - component: {fileID: 7030360661620072895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Golem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061761208093259873}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53da40eca397d5f40b14f45c0ee04a63, type: 3}
   m_Name: 

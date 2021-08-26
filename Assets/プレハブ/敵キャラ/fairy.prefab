@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 6778195905327987713}
   - component: {fileID: 5349653869326173619}
   - component: {fileID: 1208753099476073545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fairy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6498847534155032268}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53da40eca397d5f40b14f45c0ee04a63, type: 3}
   m_Name: 
@@ -391,18 +391,18 @@ MonoBehaviour:
   max_atk: 120
   max_def: 50
   max_mdef: 20
-  hp: 0
-  atk: 0
-  def: 0
-  mdef: 0
+  hp: 300
+  atk: 100
+  def: 100
+  mdef: 100
   atkspeed: 1
-  magic: 1
-  fry: 1
+  magic: 0
+  fry: 0
   cost: 100
-  balletPrefab: {fileID: 0}
+  balletPrefab: {fileID: 96928640340752468, guid: da8963f934b002247a7e86d1ce913315, type: 3}
   unit: {fileID: 0}
-  range: 0
-  speed: 0
+  range: 5
+  speed: 1
   blockCk: 0
   grade: 1
   id: 0
