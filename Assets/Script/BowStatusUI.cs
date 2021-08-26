@@ -24,7 +24,7 @@ public class BowStatusUI : MonoBehaviour
         {
             lvText.text = $"LV:{player.selectUnit.lv}";
             unithp.text = $"HP:{player.selectUnit.hp}";
-            lvUpButtonText.text = $"{player.selectUnit.Cost}GOLD";
+            lvUpButtonText.text = $"{player.selectUnit.cost}GOLD";
             sellButtonText.text = $"{player.selectUnit.Price}GOLD";
         }
     }

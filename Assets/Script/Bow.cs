@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class Bow : Unit
 {
-    [SerializeField]
+   
     //private GameObject HPUI;
     //private Slider hpSlider;
 
     public Arrow arrowPrefab;
 
-    void Start()
+    new void Start()
     {
-        this.hp = GetMAX_HP();
+        //this.hp = GetMAX_HP();
 
-        ///hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
+        //hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
         //hpSlider.value = 1f;
-        StartCoroutine("UnitHP");
+        //StartCoroutine("UnitHP");
 
         arrowPrefab.SetAtk(atk);
         StartCoroutine(SearchAndShot());
@@ -36,14 +36,14 @@ public class Bow : Unit
                 //transform.rotation = Quaternion.FromToRotation(Vector3.right, collider.transform.position - transform.position);
                 var arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
                 arrow.transform.rotation = Quaternion.FromToRotation(Vector3.right, collider.transform.position - transform.position);
-                arrow.targetEnemy = collider.GetComponent<Enemy>();
+                arrow.targetEnemy = collider.GetComponent<Enemys>();
             }
         }
     }
 
     public void UpdateHPValue()
     {
-       // hpSlider.value = (float)GetHP() / (float)GetMAX_HP();
+      // hpSlider.value = (float)GetHP() / (float)GetMAX_HP();
     }
 
     private IEnumerator UnitHP()

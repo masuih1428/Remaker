@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public Enemy targetEnemy;
+    public Enemys targetEnemy;
     [SerializeField]
     private int atk;
     private float speed = 10;
@@ -34,7 +34,7 @@ public class Arrow : MonoBehaviour
             if (targetEnemy.hp <= 0)
             {
                 Destroy(targetEnemy.gameObject);
-                FindObjectOfType<Player>().gold += targetEnemy.gold;
+                FindObjectOfType<Player>().cost += targetEnemy.cost;
             }
             transform.SetParent(targetEnemy.transform);
             enabled = false;

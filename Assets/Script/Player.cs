@@ -12,16 +12,18 @@ public class Player : MonoBehaviour
     public int hp;
 
     //GOLD(所持金)
-    public int gold;
+    public int cost;
 
     //選択中の弓
     public Unit selectUnit;
 
+   
+
     //弓の建設が出来る
     public void CreateUnit(Transform t)
     {
-        if (gold < 100) return;
-        gold -= 100;
+        if (cost < 100) return;
+        cost -= 100;
         selectUnit = Instantiate(unitPrefab, t);
         selectUnit.transform.localPosition = Vector3.zero;
     }
@@ -30,8 +32,8 @@ public class Player : MonoBehaviour
     public void LevelUpUnit()
     {
         if (selectUnit == null) return;  //何も選択されていない
-        if (gold < selectUnit.Cost) return; //所持金が足りない
-        gold -= selectUnit.Cost;
+        if (cost < selectUnit.cost) return; //所持金が足りない
+        cost -= selectUnit.cost;
         selectUnit.lv++;
         //弓のレベルアップをする
     }
@@ -40,9 +42,9 @@ public class Player : MonoBehaviour
     public void SellUnit()
     {
         if (selectUnit == null) return;
-        gold += selectUnit.Price;
+        cost += selectUnit.Price;
         Destroy(selectUnit.gameObject);
-        selectUnit = null;
+        selectUnit= null;
     }
 
     public void SetUnit(Unit unit)

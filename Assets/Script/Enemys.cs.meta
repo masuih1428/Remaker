@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 53da40eca397d5f40b14f45c0ee04a63
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - balletPrefab: {instanceID: 0}
+  - unit: {instanceID: 0}
+  - savedata: {fileID: 11400000, guid: f1c69690d0d1a6a46bb852be4e19e9af, type: 2}
+  - route: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

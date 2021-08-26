@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class PartyControl : MonoBehaviour
 {
@@ -40,6 +41,11 @@ public class PartyControl : MonoBehaviour
         GameObject game = null;
         for (int j = 0; j < party.Count; j++)
         {
+            if (party[j] == null)
+            {
+                continue;
+            }
+
             switch(partyNum)
             {
                 case 1:
@@ -57,10 +63,9 @@ public class PartyControl : MonoBehaviour
             GameObject gameChild1 = game.transform.GetChild(j).gameObject;
             GameObject gameChild2 = gameChild1.transform.GetChild(0).gameObject;
             gameChild2.GetComponent<Image>().sprite = party[j].GetComponent<SpriteRenderer>().sprite;
-            GameObject humanObj = (GameObject)Instantiate(party[j]);
+            GameObject humanObj = (GameObject)PrefabUtility.InstantiatePrefab(party[j]);
             humanObj.transform.SetParent(gameChild1.transform, false);
             humanObj.SetActive(false);
-
         }
     }
 }

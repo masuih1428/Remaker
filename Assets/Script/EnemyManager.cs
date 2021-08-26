@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     public int wave;
     public float time;
 
-    public int EnemyCnt => waves[wave].patterns.Count + FindObjectsOfType<Enemy>().Length;
+    public int EnemyCnt => waves[wave].patterns.Count + FindObjectsOfType<Enemys>().Length;
 
     // Start is called before the first frame update
     void Start()
@@ -53,6 +53,6 @@ public class EnemyPattern
 {
     public int id;
     public float time;
-    public Enemy enemy;
+    public Enemys enemy;
     public Route route;
 }

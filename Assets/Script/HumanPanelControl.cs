@@ -15,7 +15,7 @@ public class HumanPanelControl : MonoBehaviour
         {
             GameObject panelObj = (GameObject)Instantiate(prefbPanel);
             panelObj.transform.SetParent(content.transform, false);
-            GameObject humanObj = (GameObject)Instantiate(saveData.humanList[i], panelObj.transform);
+            GameObject humanObj = (GameObject)UnityEditor.PrefabUtility.InstantiatePrefab(saveData.humanList[i], panelObj.transform);
             humanObj.transform.parent.SetParent(panelObj.transform, false);
             humanObj.SetActive(false);
             GameObject nakamiImage = panelObj.transform.GetChild(0).gameObject;//panel‚Ì’†‚ÌnakamiImage‚ðŽæ“¾

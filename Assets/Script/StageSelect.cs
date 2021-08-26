@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
 
-    //¶¬‚·‚éƒQ[ƒ€ƒIƒuƒWƒFƒNƒg
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g
     public GameObject target;
     public Image image;
     private Sprite sprite;
@@ -23,31 +23,31 @@ public class StageSelect : MonoBehaviour
     public void OnclickButton()
     {
 
-        mapimg.sprite = Resources.Load<Sprite>("Image/‰ÎR");
-        stagecount = "‚Ü‚Á‚Õ‚R";
+        mapimg.sprite = Resources.Load<Sprite>("Image/ï¿½ÎR");
+        stagecount = "ï¿½Ü‚ï¿½ï¿½Õ‚R";
     }
     public void Onclick2()
     {
        
-        mapimg.sprite = Resources.Load<Sprite>("Image/‚Ü‚Á‚Õ‚P‰æ‘œ");
-        stagecount = "‚Ü‚Á‚Õ‚P";
+        mapimg.sprite = Resources.Load<Sprite>("Image/ï¿½Ü‚ï¿½ï¿½Õ‚Pï¿½æ‘œ");
+        stagecount = "ï¿½Ü‚ï¿½ï¿½Õ‚P";
     }
     public void Onclick3()
     {
-        mapimg.sprite = Resources.Load<Sprite>("Image/‚Ü‚Á‚Õ‚P‰æ‘œ");
-        stagecount = "‚Ü‚Á‚Õ2";
+        mapimg.sprite = Resources.Load<Sprite>("Image/ï¿½Ü‚ï¿½ï¿½Õ‚Pï¿½æ‘œ");
+        stagecount = "ï¿½Ü‚ï¿½ï¿½ï¿½2";
     }
     public void Onclick4()
     {
-        Debug.Log("4‚ª‰Ÿ‚³‚ê‚½");
+        Debug.Log("4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½");
     }
 
     public void Onclick5()
     {
         if (stagecount == "0")
         {
-            mapimg.sprite = Resources.Load<Sprite>("Image/‘I‚Ô");
-            Debug.Log("‘I‘ğ‚³‚ê‚Ä‚È‚¢‚æ");
+            mapimg.sprite = Resources.Load<Sprite>("Image/ï¿½Iï¿½ï¿½");
+            Debug.Log("ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚È‚ï¿½ï¿½ï¿½");
         }
         else
         {

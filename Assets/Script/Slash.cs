@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slash : MonoBehaviour
 {
-    public Enemy targetEnemy;
+    public Enemys targetEnemy;
     [SerializeField]
     private int atk;
 
@@ -28,7 +28,7 @@ public class Slash : MonoBehaviour
         if (targetEnemy.hp <= 0)
         {
             Destroy(targetEnemy.gameObject);
-            FindObjectOfType<Player>().gold += targetEnemy.gold;
+            FindObjectOfType<Player>().cost += targetEnemy.cost;
         }
         Destroy(gameObject);
     }

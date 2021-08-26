@@ -1,10 +1,24 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Scenes/Loading.unity.meta
+guid: 2a59217ab73ec9a4e8e9d7e0f7b60f28
+=======
+guid: bfdfdeb089a2cec4f8945e5dca43e335
+folderAsset: yes
+>>>>>>> bd0d2ecb2eebb3b6d8e5b0f11cdbdd70ddbdb61b:Assets/Font/shigoto2.meta
+=======
+guid: bfdfdeb089a2cec4f8945e5dca43e335
+folderAsset: yes
+>>>>>>> af0882e54781234e9062821e317341637d4616bc
+=======
 <<<<<<< HEAD:Assets/マップ素材/mapchip2_0724/mapchip2/タイル設定ファイル/000_街.tile.meta
 guid: 83f92129f678d0943aa7233efbb83f63
 =======
 guid: bfdfdeb089a2cec4f8945e5dca43e335
 folderAsset: yes
 >>>>>>> 0ff17032acabad98799dad11223c286f93750bf9:Assets/Font/shigoto2.meta
+>>>>>>> 2f4e0935646d53b722baad1707a4eb766b085449
 DefaultImporter:
   externalObjects: {}
   userData: 

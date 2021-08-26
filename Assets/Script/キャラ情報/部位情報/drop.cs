@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Drop : MonoBehaviour
 {
+    public int cost;
     public string partName;
     public string part;//どこの部位か
     public int hp;
@@ -16,13 +17,12 @@ public class Drop : MonoBehaviour
 
     public void Start()
     {
-
     }
 
     public string Tostring()
     {
 
-        string returnstring = "part:"+this.part +"\n"+"hp:" + (this.hp * this.rareFloat) + "\natk:"+ +(this.atk * this.rareFloat) + "\ndef:" + (this.def * this.rareFloat) + "\nmdef:" + (this.mdef * this.rareFloat) + "\n";
+        string returnstring = "part:"+this.part +"\n"+"hp:" + this.hp + "\natk:"+ this.atk + "\ndef:" + this.def + "\nmdef:" + this.mdef  + "\n";
         return returnstring;
     } 
 
@@ -32,7 +32,6 @@ public class Drop : MonoBehaviour
         Debug.Log("Start");
         if (this.rare == "")
         {
-            Debug.Log("null");
             //レア度がnullの場合のみレア度を乱数で作成
             float r1 = Random.value;//0.0f～1.0fまでの値
             float rare = 0.3f; //レア
@@ -52,6 +51,11 @@ public class Drop : MonoBehaviour
                     this.rare = "normal";
                     break;
             }
+            //ステータスの上昇
+            this.hp = (int)(this.hp * rareFloat);
+            this.atk = (int)(this.atk * rareFloat);
+            this.def = (int)(this.def * rareFloat);
+            this.mdef = (int)(this.mdef * rareFloat);
         }
     }
 }

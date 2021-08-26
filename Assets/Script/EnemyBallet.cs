@@ -36,8 +36,9 @@ public class EnemyBallet : MonoBehaviour
             {
                 Destroy(targetUnit.gameObject);
             }
-            transform.SetParent(targetUnit.transform);
-            enabled = false;
+            //transform.SetParent(targetUnit.transform);
+            //enabled = false;
+            Destroy(gameObject);
         }
     }
 }
