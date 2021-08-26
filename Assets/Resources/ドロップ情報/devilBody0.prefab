@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d613c76d7307ce429d1b3aad5fe6ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 0
   partName: devilBody
   part: body
   hp: 1000
@@ -108,5 +109,5 @@ MonoBehaviour:
   mdef: 5
   rareFloat: 1
   rare: normal
-  max_block: 0
+  max_block: 2
   fry: 0
