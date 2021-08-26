@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7888305106153662854}
   - component: {fileID: 6785445996346624324}
   - component: {fileID: 7248911207901591322}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 9092181147277063973}
   - component: {fileID: 6743108029114518379}
   - component: {fileID: 3755065423825284962}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 2529573114520474460}
   - component: {fileID: 4158702073853612455}
   - component: {fileID: 7754155336542286061}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733961980293272176}
   - component: {fileID: 4722081693978057891}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 2991542534966336053}
   - component: {fileID: 2137334619364342571}
   - component: {fileID: 2888720124176846560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "\u5263\u58EB21"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.049372673}
+  m_Offset: {x: 0.04848981, y: -0.135162}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -471,7 +471,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5722787, y: 2.3166614}
+  m_Size: {x: 0.71438456, y: 0.9962504}
   m_EdgeRadius: 0
 --- !u!114 &2137334619364342571
 MonoBehaviour:
@@ -546,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2896247260049301114}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

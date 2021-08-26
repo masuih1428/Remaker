@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202046199279726110}
   - component: {fileID: 1942032657292865813}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7988174699526892960}
   - component: {fileID: 63036694156731839}
   - component: {fileID: 2340352819249270527}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 6925699336960256813}
   - component: {fileID: 6240704118342508725}
   - component: {fileID: 3619921009929136723}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "\u5263\u58EB\uFF1224"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.049372673}
+  m_Offset: {x: -0.01741743, y: -0.26128644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -296,7 +296,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5722787, y: 2.3166614}
+  m_Size: {x: 0.78268194, y: 0.98711956}
   m_EdgeRadius: 0
 --- !u!114 &6240704118342508725
 MonoBehaviour:
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 4721431316458354795}
   - component: {fileID: 9147371533307664401}
   - component: {fileID: 4116191083579729491}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1054731026581513893}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 5997437092315791529}
   - component: {fileID: 5668248423352751012}
   - component: {fileID: 5098257607901302641}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

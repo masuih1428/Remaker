@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5556193044877089092}
   - component: {fileID: 5097235095119727649}
   - component: {fileID: 618766557949271920}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 8934606522986512070}
   - component: {fileID: 1326610799414907094}
   - component: {fileID: 4742110815694193852}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnitModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.049372673}
+  m_Offset: {x: -0.018380404, y: -0.11983156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -207,7 +207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5722787, y: 2.3166614}
+  m_Size: {x: 0.922832, y: 1.0361476}
   m_EdgeRadius: 0
 --- !u!114 &1326610799414907094
 MonoBehaviour:
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 4533173832513601249}
   - component: {fileID: 6073694106693533872}
   - component: {fileID: 6129541665678954406}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9116545366447403890}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8647828748817597663}
   - component: {fileID: 3111557888572506396}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 8300279664597987909}
   - component: {fileID: 3561102470121583953}
   - component: {fileID: 6908872513186786153}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: HPUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
