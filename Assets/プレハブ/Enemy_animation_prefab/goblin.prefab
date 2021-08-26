@@ -144,7 +144,7 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
-  cost: 10
+  cost: 100
   balletPrefab: {fileID: 0}
   unit: {fileID: 0}
   range: 10

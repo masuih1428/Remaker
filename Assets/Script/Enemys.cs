@@ -57,12 +57,17 @@ public class Enemys : CharaScript
             balletPrefab.SetAtk(atk);
             StartCoroutine(SearchAndShot());
         }
+        
+        
+            
+        
 
         blockCk = true;
         //
         blockname = null;
         transform.position = route.points[0].transform.position;
         StartCoroutine("AttackUnit");
+
 
         //コンストラクタ
         //this.hp = (int)(this.max_hp * savedata.dificult);
@@ -163,6 +168,7 @@ public class Enemys : CharaScript
             if (unit.hp <= 0)
             {
                 Destroy(unit.gameObject);
+
             }
             yield break;
         }
@@ -190,10 +196,12 @@ public class Enemys : CharaScript
             {
                 //
                 //UpdateHPValue();
-               
+                Debug.Log(AtkRange);
+                Debug.Log(transform.position);
+                Debug.Log(LayerMask.GetMask("Unit"));
                 collider = Physics2D.OverlapCircle(transform.position, AtkRange, LayerMask.GetMask("Unit"));
-                
                 Debug.Log(collider);
+                //Debug.Log(collider);
                 if (collider != null && balletPrefab != null)
                 {
                     //Debug.Log(200);
