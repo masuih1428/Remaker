@@ -14,6 +14,7 @@ public class SaveData : ScriptableObject
     public List<GameObject> humanParty2;//上同２
     public List<GameObject> humanParty3;//上同３
     public List<GameObject> humanList;
+
     public GameObject DragObj;//ドラック＆ドロップで使用する変数
     public int dropInt;//プレハブ作成時の変数
     public int HumanInt;//上同

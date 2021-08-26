@@ -20,9 +20,9 @@ public class MakeDrop : MonoBehaviour
         int dropCount = Random.Range(0, 8);
         Debug.Log(dropCount);
         //ドロップの生成
-        for (int i = 0; i < dropCount; i++)
+        for (int i = 0; i < dropCount-1; i++)
         {
-            int dropListCount = Random.Range(0, dropList.Count);
+            int dropListCount = Random.Range(0, dropList.Count - 1);
             Enemys enemy = dropEnemys[dropListCount].GetComponent<Enemys>();
             GameObject drop;
             if (i < 2)
@@ -30,7 +30,7 @@ public class MakeDrop : MonoBehaviour
                 drop = enemy.dropList[Random.Range(0, 4)];
             } else
             {
-                drop = enemy.dropList[Random.Range(0, enemy.dropList.Count)];
+                drop = enemy.dropList[Random.Range(0, enemy.dropList.Count - 1)];
             }
             
             //オブジェクトの保存など
@@ -43,9 +43,6 @@ public class MakeDrop : MonoBehaviour
             saveData.drops.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(dropInstant));
 
             //UIでドロップの画像を表示するスクリプト
-
-
-
             Debug.Log(drop);
         }
     }
