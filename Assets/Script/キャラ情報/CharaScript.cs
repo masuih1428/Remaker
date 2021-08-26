@@ -28,6 +28,7 @@ public class CharaScript : MonoBehaviour
 
     public bool magic = false;//マジック使うか
     public bool fry = false;//飛行するか
+    public int cost;
     
     public string ToString()
     {

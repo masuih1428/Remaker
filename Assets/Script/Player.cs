@@ -1,47 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class Player : MonoBehaviour
 {
+
     //弓Prefab
-    public Bow bowPrefab;
+    public Unit unitPrefab;
 
     //HP(拠点の体力)
     public int hp;
 
     //GOLD(所持金)
-    public int gold;
+    public int cost;
 
     //選択中の弓
-    public Bow selectBow;
+    public Unit selectUnit;
 
-    //指定の場所に弓の建設が出来る
-    public void CreateBow(Transform t)
+   
+
+    //弓の建設が出来る
+    public void CreateUnit(Transform t)
     {
-        if (gold < 100) return;
-        gold -= 100;
-        selectBow = Instantiate(bowPrefab, t);
-        selectBow.transform.localPosition = Vector3.zero;
+        if (cost < 100) return;
+        cost -= 100;
+        selectUnit = Instantiate(unitPrefab, t);
+        selectUnit.transform.localPosition = Vector3.zero;
     }
 
     //選択中の弓のレベルアップが出来る
-    public void LevelUpBow()
+    public void LevelUpUnit()
     {
-        if (selectBow == null) return;  //何も選択されていない
-        if (gold < 150) return; //所持金が足りない
-        gold -= 150;
-        //TODO goldを消費して、弓のレベルアップをする
+        if (selectUnit == null) return;  //何も選択されていない
+        if (cost < selectUnit.cost) return; //所持金が足りない
+        cost -= selectUnit.cost;
+        selectUnit.lv++;
+        //弓のレベルアップをする
     }
 
     //選択中の弓の売却が出来る
-    public void SellBow()
+    public void SellUnit()
     {
-        if (selectBow == null) return;
-        //TODO 本当はレベルに応じて金額が変わる
-        gold += 50;
-        Destroy(selectBow.gameObject);
-        selectBow = null;
+        if (selectUnit == null) return;
+        cost += selectUnit.Price;
+        Destroy(selectUnit.gameObject);
+        selectUnit= null;
+    }
+
+    public void SetUnit(Unit unit)
+    {
+        unitPrefab = unit;
     }
 
     void Update()
@@ -51,21 +59,22 @@ public class Player : MonoBehaviour
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var col = Physics2D.OverlapPoint(mousePos, LayerMask.GetMask("Block"));
             if (col == null) return;
-            CreateBow(col.transform);
-            var childBow = col.GetComponentInChildren<Bow>();
-            if (childBow == null)
+            var childUnit = col.GetComponentInChildren<Unit>();
+            if (childUnit == null)
             {
-                CreateBow(col.transform);
+                if (unitPrefab == null) return;
+                CreateUnit(col.transform);
             }
             else
             {
-                selectBow = childBow;
+                selectUnit = childUnit;
             }
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            SellBow();
+            unitPrefab = null;
+            selectUnit = null;
         }
     }
 }

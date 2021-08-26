@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- 
+
 public class EnemyManager : MonoBehaviour
 {
     public Wave[] waves;
     public int wave;
     public float time;
+
+    public int EnemyCnt => waves[wave].patterns.Count + FindObjectsOfType<Enemys>().Length;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class EnemyManager : MonoBehaviour
             {
                 var enemy = Instantiate(pattern.enemy, new Vector3(-1000, -1000), Quaternion.identity);
                 enemy.route = pattern.route;
+                enemy.id = pattern.id;
             }
         }
 
@@ -48,7 +51,8 @@ public class Wave
 [Serializable]
 public class EnemyPattern
 {
+    public int id;
     public float time;
-    public Enemy enemy;
+    public Enemys enemy;
     public Route route;
 }

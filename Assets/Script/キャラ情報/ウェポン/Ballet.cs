@@ -16,27 +16,35 @@ public class Ballet : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("B1");
         if (targetEnemy == null)
         {
+            //Debug.Log("B2");
             Destroy(gameObject);
             return;
         }
-
+        
         var v = targetEnemy.transform.position - transform.position;
+        Debug.Log("B4");
         transform.position += v.normalized * Balletspeed * Time.deltaTime;
-
-        if (v.magnitude < 0.7f)
+        Debug.Log("B5");
+        if (v.magnitude < 0.7f)//‚æ‚­‚È‚¢
         {
+            Debug.Log("B6");
             //Debug.Log(atk);
             targetEnemy.hp = targetEnemy.hp - atk;
+            Debug.Log("B7");
             //Debug.Log(targetEnemy.hp);
             if (targetEnemy.hp <= 0)
             {
+                Debug.Log("B8");
                 Destroy(targetEnemy.gameObject);
-                //FindObjectOfType<Player>().gold += targetEnemy.gold;
+                FindObjectOfType<Player>().cost += targetEnemy.cost;
             }
-            transform.SetParent(targetEnemy.transform);
-            enabled = false;
+            Debug.Log("B9");
+            //transform.SetParent(targetEnemy.transform);
+            //enabled = false;
+            Destroy(gameObject);
         }
     }
 }

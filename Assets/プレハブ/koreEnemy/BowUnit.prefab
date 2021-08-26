@@ -169,7 +169,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2845038946003727333
@@ -323,12 +323,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0e945bc6e73399a41ab842d0097ddedd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50d1aa5511d3e2e4e9be4860ffd03612, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.5, y: 3.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -346,17 +346,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add18c53905cbee4898b4d18be389aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unittype: 1
-  lv: 1
-  MAX_HP: 3
+  charaName: 
+  name: human
+  max_hp: 0
+  max_atk: 0
+  max_def: 0
+  max_mdef: 0
   hp: 3
   atk: 1
+  def: 0
+  mdef: 0
+  atkspeed: 0.9
+  magic: 0
+  fry: 0
+  unittype: 1
+  lv: 1
   MAX_BLOCK: 0
   range: 1
-  atkspeed: 0.9
   CostManey: 200
+  Cost: 0
+  head: {fileID: 0}
+  body: {fileID: 0}
+  hand: {fileID: 0}
+  leg: {fileID: 0}
+  wepon: {fileID: 0}
+  headObj: {fileID: 0}
+  bodyObj: {fileID: 0}
+  handObj: {fileID: 0}
+  legObj: {fileID: 0}
+  weponObj: {fileID: 0}
   blockEnemy: []
-  HPUI: {fileID: 5766374561470394893}
   arrowPrefab: {fileID: 1301141474070143438, guid: 17a0896f647cf694299d5e19cad0302e, type: 3}
 --- !u!58 &8755114031260474531
 CircleCollider2D:
@@ -474,7 +493,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5766374561470394893
