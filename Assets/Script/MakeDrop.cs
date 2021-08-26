@@ -35,12 +35,17 @@ public class MakeDrop : MonoBehaviour
             
             //オブジェクトの保存など
             GameObject dropInstant = GameObject.Instantiate(drop);
-            drop.GetComponent<Drop>().rareStart();
+            dropInstant.GetComponent<Drop>().rareStart();
             Debug.Log(drop.GetComponent<Drop>().rare);
             dropList.Add(dropInstant);
             dropInstant.SetActive(false);
             PrefabUtility.SaveAsPrefabAssetAndConnect(dropInstant, "Assets/Resources/ドロップ情報/" + drop.GetComponent<Drop>().partName + (saveData.dropInt++) + ".prefab",InteractionMode.AutomatedAction);
             saveData.drops.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(dropInstant));
+
+            //UIでドロップの画像を表示するスクリプト
+
+
+
             Debug.Log(drop);
         }
     }

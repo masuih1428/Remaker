@@ -1,65 +1,36 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class StageSelect : MonoBehaviour
 {
-
-    //��������Q�[���I�u�W�F�N�g
-    public GameObject target;
-    public Image image;
-    private Sprite sprite;
-    [SerializeField] Image mapimg = null;
-    public static string stagecount = "0";
-
-    GameObject ToMains; 
-
-    ToMain script;
-    void Start()
+    public SaveData saveData;
+    public GameObject sougenn;
+    public GameObject kaigan;
+    public GameObject kazan;
+    public void SelectStage1()
     {
-
-    }
-    public void OnclickButton()
-    {
-
-        mapimg.sprite = Resources.Load<Sprite>("Image/�ΎR");
-        stagecount = "�܂��ՂR";
-    }
-    public void Onclick2()
-    {
-       
-        mapimg.sprite = Resources.Load<Sprite>("Image/�܂��ՂP�摜");
-        stagecount = "�܂��ՂP";
-    }
-    public void Onclick3()
-    {
-        mapimg.sprite = Resources.Load<Sprite>("Image/�܂��ՂP�摜");
-        stagecount = "�܂���2";
-    }
-    public void Onclick4()
-    {
-        Debug.Log("4�������ꂽ");
+        saveData.stage = "����";
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
     }
 
-    public void Onclick5()
+    public void SelectStage2()
     {
-        if (stagecount == "0")
-        {
-            mapimg.sprite = Resources.Load<Sprite>("Image/�I��");
-            Debug.Log("�I������ĂȂ���");
-        }
-        else
-        {
-           ToMains = GameObject.Find("tomain");
-            script = ToMains.GetComponent<ToMain>();
-
-           script.Onclick8();
-        }
+        saveData.stage = "�C��";
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
     }
 
-    public void Game()
+    public void SelectStage3()
     {
-        SceneManager.LoadScene(stagecount);
+        saveData.stage = "�ΎR";
+        sougenn.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kaigan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+        kazan.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1f);
     }
+
 }

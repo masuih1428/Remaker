@@ -63,6 +63,9 @@ public class ToMain : MonoBehaviour
         SceneManager.LoadScene("İ’è");
     }
 
-
+    public void Onclick14()
+    {
+        SceneManager.LoadScene("”„‹p‰æ–Ê");
+    }
 
 }

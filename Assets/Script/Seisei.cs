@@ -16,7 +16,8 @@ public class Seisei : MonoBehaviour
     public GameObject nameObj;
     public GameObject UnitModel;//ユニットの元プレハブ
     public SaveData saveData;
-    private string assetPath = "Assets/Resources/味方キャラ/";
+    private string assetPath = "Assets/Resources/味方キャラ/";//プレハブ本体の格納場所
+    private string resorcePath = "Hero";//キャラ画像とアニメーターの格納場所
     private GameObject headOri;//prefabを入れる変数
     private GameObject bodyOri;
     private GameObject legOri;
@@ -66,13 +67,15 @@ public class Seisei : MonoBehaviour
             if (nameObj.transform.GetChild(2).gameObject.GetComponent<Text>().text == null)
             {
                 throw new Exception();//名前未入力の為
-            }　else
+            }
+            else
             {
                 unitScript.charaName = nameObj.transform.GetChild(2).gameObject.GetComponent<Text>().text;
             }
             Debug.Log("取得完了");
 
-        } catch (Exception e)
+        }
+        catch (Exception e)
         {
             Debug.Log("入力してない欄あり");
         }
@@ -80,8 +83,18 @@ public class Seisei : MonoBehaviour
         try
         {
             unitScript.Start();
-            GameObject unitPrefab = PrefabUtility.SaveAsPrefabAsset(unit, assetPath + unitScript.charaName + saveData.HumanInt + ".prefab");
-            saveData.humanList.Add(unitPrefab);
+            //画像を入れる
+            int ran = UnityEngine.Random.Range(1, 17);
+            Debug.Log(ran);
+            Sprite image = Resources.Load<Sprite>(resorcePath + "/Hero_image(" + ran + ")");
+            Debug.Log(resorcePath + "/Hero_image(" + ran + ")_1");
+            Debug.Log(image);
+            unit.GetComponent<SpriteRenderer>().sprite = image;
+            //コントローラーを変える
+            Debug.Log((RuntimeAnimatorController)Resources.Load(resorcePath + "/Animation/Hero_animation " + ran + "/hero_animator " + ran));
+            unit.GetComponent<Animator>().runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load(resorcePath + "/Animation/hero_animation " + ran + "/hero_animator " + ran);
+            GameObject unitPrefab = PrefabUtility.SaveAsPrefabAsset(unit, assetPath + unitScript.charaName + (saveData.HumanInt++) + ".prefab");
+            saveData.humanList.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(unitPrefab));
             //dropListから使用した素材を消去
             saveData.drops.Remove(headOri);
             saveData.drops.Remove(bodyOri);
@@ -92,12 +105,15 @@ public class Seisei : MonoBehaviour
                 saveData.drops.Remove(weponOri);
             }
 
+
+
             //リロード
             // 現在のSceneを取得
             Scene loadScene = SceneManager.GetActiveScene();
             // 現在のシーンを再読み込みする
             SceneManager.LoadScene(loadScene.name);
-        } catch(Exception e)
+        }
+        catch (Exception e)
         {
             Debug.Log(e);
         }
