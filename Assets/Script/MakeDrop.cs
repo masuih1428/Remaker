@@ -35,7 +35,7 @@ public class MakeDrop : MonoBehaviour
             
             //オブジェクトの保存など
             GameObject dropInstant = GameObject.Instantiate(drop);
-            drop.GetComponent<Drop>().rareStart();
+            dropInstant.GetComponent<Drop>().rareStart();
             Debug.Log(drop.GetComponent<Drop>().rare);
             dropList.Add(dropInstant);
             dropInstant.SetActive(false);

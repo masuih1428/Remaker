@@ -6207,6 +6207,9 @@ MonoBehaviour:
   content1: {fileID: 693267304}
   content2: {fileID: 1833896806}
   content3: {fileID: 151602150}
+  tab1: {fileID: 693267304}
+  tab2: {fileID: 1833896806}
+  tab3: {fileID: 151602150}
 --- !u!114 &984137184
 MonoBehaviour:
   m_ObjectHideFlags: 0

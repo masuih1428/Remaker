@@ -6,6 +6,7 @@ using UnityEngine;
 public class SaveData : ScriptableObject
 {
     [SerializeField]
+    public int BattleParty = 1;
     public float dificult = 1; //難易度
     public List<GameObject> drops; //ドロップ情報
     public string stage; //選択ステージ

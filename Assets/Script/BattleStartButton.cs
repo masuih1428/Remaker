@@ -11,6 +11,10 @@ public class BattleStartButton : MonoBehaviour
     public GameObject content1;
     public GameObject content2;
     public GameObject content3;
+    public GameObject tab1;
+    public GameObject tab2;
+    public GameObject tab3;
+
     public void Onclick()
     {
         for (int i = 0; i < 3; i++)
@@ -62,7 +66,22 @@ public class BattleStartButton : MonoBehaviour
             }
         }
 
+        //battleするパーティーを選択
+        if(tab1.activeSelf)
+        {
+            saveData.BattleParty = 1;
+        } else if(tab2.activeSelf)
+        {
+            saveData.BattleParty = 2;
+        } else if(tab3.activeSelf)
+        {
+            saveData.BattleParty = 3;
+        } else
+        {
+            saveData.BattleParty = 1;
+        }
         
+        //シーンロード
         switch (saveData.stage)
         {
             case "草原":
