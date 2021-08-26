@@ -222,12 +222,8 @@ GameObject:
   - component: {fileID: 3073479087366604041}
   - component: {fileID: 3073479087366604040}
   - component: {fileID: 3073479087366604043}
-<<<<<<< HEAD
-  - component: {fileID: 3652355960000778050}
-=======
   - component: {fileID: 5855405004597264786}
   - component: {fileID: 4227170924161199766}
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_Layer: 0
   m_Name: kingman
   m_TagString: Untagged
@@ -243,16 +239,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073479087366604042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 1.6764045, y: -1.2335383, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
-  m_Children: []
-=======
   m_LocalPosition: {x: 1.6764045, y: -1.23434, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9077100187447319066}
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -332,6 +322,12 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
+  cost: 100
+  balletPrefab: {fileID: 0}
+  unit: {fileID: 0}
+  range: 0
+  speed: 0
+  blockCk: 0
   grade: 2
   id: 0
   stealth: 0
@@ -344,40 +340,20 @@ MonoBehaviour:
   - {fileID: 1573727308133284139, guid: 093d513e47a8d4940b689c3aa83ad893, type: 3}
   - {fileID: 7666205536882328019, guid: ee95b341fa56da14f9f58579620596ee, type: 3}
   - {fileID: 6139033199839316325, guid: 810a1e60ea210ac4cba9053bdd2f7a7a, type: 3}
-<<<<<<< HEAD
-  route: {fileID: 0}
---- !u!114 &3652355960000778050
-MonoBehaviour:
-=======
   - {fileID: 8640358301017236396, guid: 29b01970e9eceb942aae761a0c36fa09, type: 3}
   - {fileID: 2245018718998210331, guid: 8258c63f1c048e84d8a2a8222a3fe689, type: 3}
   - {fileID: 393930711647129740, guid: 56a7fcd97a24b0b498eacca9b7582ad0, type: 3}
+  route: {fileID: 0}
+  HPUI: {fileID: 0}
+  blockname: 
 --- !u!61 &5855405004597264786
 BoxCollider2D:
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073479087366604042}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b3ee6aa8ede98458b4f86ea1005118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balletPrefab: {fileID: 0}
-  unit: {fileID: 0}
-  id: 0
-  MAX_HP: 1000
-  hp: 1000
-  atk: 200
-  atkspeed: 1
-  range: 0
-  speed: 1
-  gold: 100
-  route: {fileID: 0}
-=======
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -581,4 +557,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124

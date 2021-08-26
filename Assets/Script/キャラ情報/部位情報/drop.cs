@@ -29,9 +29,10 @@ public class Drop : MonoBehaviour
     public void rareStart()
     {
         //rareがnullの時のみ最初にレアリティを決める
-        Debug.Log("Start");
+        
         if (this.rare == "")
         {
+            Debug.Log("Start");
             //レア度がnullの場合のみレア度を乱数で作成
             float r1 = Random.value;//0.0f～1.0fまでの値
             float rare = 0.3f; //レア

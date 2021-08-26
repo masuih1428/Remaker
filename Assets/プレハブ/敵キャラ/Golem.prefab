@@ -386,12 +386,8 @@ GameObject:
   - component: {fileID: 9061761208093259879}
   - component: {fileID: 9061761208093259878}
   - component: {fileID: 9061761208093259876}
-<<<<<<< HEAD
-  - component: {fileID: 4456690475887492130}
-=======
   - component: {fileID: 245143845701141564}
   - component: {fileID: 970918099950187296}
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_Layer: 0
   m_Name: Golem
   m_TagString: Untagged
@@ -408,14 +404,9 @@ Transform:
   m_GameObject: {fileID: 9061761208093259873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.8036053, y: -1.3780512, z: 0}
-<<<<<<< HEAD
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
-  m_Children: []
-=======
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8262232801060346521}
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -495,6 +486,12 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
+  cost: 100
+  balletPrefab: {fileID: 0}
+  unit: {fileID: 0}
+  range: 0
+  speed: 0
+  blockCk: 0
   grade: 1
   id: 0
   stealth: 0
@@ -507,14 +504,12 @@ MonoBehaviour:
   - {fileID: 6591597570843942178, guid: 9c7bb77048f2c174e9d4de2fb75653d0, type: 3}
   - {fileID: 7882163820428581488, guid: c612b04a71a44c941b3e2ed4569c8109, type: 3}
   - {fileID: 5726279814644621253, guid: ca48a2de118e62e44acd1776439f2cfb, type: 3}
-<<<<<<< HEAD
-  route: {fileID: 0}
---- !u!114 &4456690475887492130
-MonoBehaviour:
-=======
   - {fileID: 7172647605420309455, guid: b8fc00430b733694ebb66bd8be95a102, type: 3}
   - {fileID: 1553311769892583203, guid: 9948495d8d67feb40a792752dad986c0, type: 3}
   - {fileID: 6581634334036217830, guid: b8e9c5037fd8dc04283dff0eda1aec0d, type: 3}
+  route: {fileID: 0}
+  HPUI: {fileID: 0}
+  blockname: 
 --- !u!50 &245143845701141564
 Rigidbody2D:
   serializedVersion: 4
@@ -538,30 +533,12 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!61 &970918099950187296
 BoxCollider2D:
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061761208093259873}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b3ee6aa8ede98458b4f86ea1005118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balletPrefab: {fileID: 0}
-  unit: {fileID: 0}
-  id: 0
-  MAX_HP: 1000
-  hp: 1000
-  atk: 150
-  atkspeed: 1
-  range: 0
-  speed: 1
-  gold: 100
-  route: {fileID: 0}
-=======
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -580,4 +557,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.48}
   m_EdgeRadius: 0
->>>>>>> 91c2dbcecbcbb1382a1b2be36ba9c3992636b124
