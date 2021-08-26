@@ -52,14 +52,14 @@ public class Unit : CharaScript
     public void Start()
     {
         //ステータス設定
-        hp = 1000;// head.hp + body.hp + hand.hp + leg.hp+wepon.hp;
-        atk = 100;//head.atk + body.atk + hand.atk + leg.atk + wepon.atk;
-        def = 100;// head.def + body.def + hand.def + leg.def + wepon.def;
-        mdef = 100;// head.mdef + body.mdef + hand.mdef + leg.mdef + wepon.mdef;
-        magic = false;// wepon.magic;
-        fry = false;// body.fry;
-        cost = 10;// head.cost + body.cost + hand.cost + leg.cost;
-        //max_block = body.max_block;
+        hp = head.hp + body.hp + hand.hp + leg.hp+wepon.hp;
+        atk = head.atk + body.atk + hand.atk + leg.atk + wepon.atk;
+        def = head.def + body.def + hand.def + leg.def + wepon.def;
+        mdef = head.mdef + body.mdef + hand.mdef + leg.mdef + wepon.mdef;
+        magic = wepon.magic;
+        fry =  body.fry;
+        cost = head.cost + body.cost + hand.cost + leg.cost;
+        max_block = body.max_block;
         //HPバー設定
         hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
         hpSlider.value = 1f;

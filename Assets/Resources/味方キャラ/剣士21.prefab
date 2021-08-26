@@ -414,7 +414,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -2861052131284236269, guid: c8e9098ee5b81db439dbd5a9d9b350bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -498,7 +498,11 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
-  Cost: 25
+  cost: 0
+  unittype: 0
+  lv: 0
+  MAX_BLOCK: 0
+  range: 0
   head: {fileID: 902930928560974773, guid: 460b60abbfd5317449057b8d1f089b39, type: 3}
   body: {fileID: 1653186649005774222, guid: 1500c3af269622d4b834d0859153f5e3, type: 3}
   hand: {fileID: 1573898296230170357, guid: 4fcc8e4a66d91844ba419f316dd923a3, type: 3}
@@ -509,8 +513,11 @@ MonoBehaviour:
   handObj: {fileID: 3034822825916146721, guid: 4fcc8e4a66d91844ba419f316dd923a3, type: 3}
   legObj: {fileID: 6206260008466691808, guid: 346c08441ffb7414e8140d4652b21e4e, type: 3}
   weponObj: {fileID: 8968009435022608930, guid: 75a5c892470269045b557ad194641058, type: 3}
+  max_block: 1
+  balletPrefab: {fileID: 0}
   blockEnemy: []
   HPUI: {fileID: 1071581901969811100}
+  id: 0
 --- !u!95 &2888720124176846560
 Animator:
   serializedVersion: 3

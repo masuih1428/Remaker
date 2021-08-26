@@ -22,12 +22,12 @@ public class MakeDrop : MonoBehaviour
         //ドロップの生成
         for (int i = 0; i < dropCount-1; i++)
         {
-            int dropListCount = Random.Range(0, dropList.Count - 1);
+            int dropListCount = Random.Range(0, dropEnemys.Count - 1);
             Enemys enemy = dropEnemys[dropListCount].GetComponent<Enemys>();
             GameObject drop;
             if (i < 2)
             {
-                drop = enemy.dropList[Random.Range(0, 4)];
+                drop = enemy.dropList[Random.Range(0,3)];
             } else
             {
                 drop = enemy.dropList[Random.Range(0, enemy.dropList.Count - 1)];
@@ -36,10 +36,9 @@ public class MakeDrop : MonoBehaviour
             //オブジェクトの保存など
             GameObject dropInstant = GameObject.Instantiate(drop);
             dropInstant.GetComponent<Drop>().rareStart();
-            Debug.Log(drop.GetComponent<Drop>().rare);
-            dropList.Add(dropInstant);
             dropInstant.SetActive(false);
             PrefabUtility.SaveAsPrefabAssetAndConnect(dropInstant, "Assets/Resources/ドロップ情報/" + drop.GetComponent<Drop>().partName + (saveData.dropInt++) + ".prefab",InteractionMode.AutomatedAction);
+            dropList.Add(dropInstant);
             saveData.drops.Add(PrefabUtility.GetCorrespondingObjectFromOriginalSource(dropInstant));
 
             //UIでドロップの画像を表示するスクリプト
