@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 9061761208093259876}
   - component: {fileID: 245143845701141564}
   - component: {fileID: 970918099950187296}
+  - component: {fileID: 7030360661620072895}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Untagged
@@ -557,3 +558,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44, y: 0.48}
   m_EdgeRadius: 0
+--- !u!95 &7030360661620072895
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061761208093259873}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8909386c99ab7446884ef2e9b8f1a1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

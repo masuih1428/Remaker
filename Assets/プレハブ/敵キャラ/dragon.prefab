@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 1303005395551226311}
   - component: {fileID: 4833314438005394421}
   - component: {fileID: 8813698700892579071}
+  - component: {fileID: -5722801154407296842}
   m_Layer: 0
   m_Name: dragon
   m_TagString: Untagged
@@ -257,6 +258,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &-5722801154407296842
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303005395551226298}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5390102e0cce994a8d2dc2a376bf4e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5546249893745117755
 GameObject:
   m_ObjectHideFlags: 0

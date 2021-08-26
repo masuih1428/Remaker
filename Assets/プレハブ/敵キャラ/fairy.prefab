@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 6498847534155032271}
   - component: {fileID: 6778195905327987713}
   - component: {fileID: 5349653869326173619}
+  - component: {fileID: 1208753099476073545}
   m_Layer: 0
   m_Name: fairy
   m_TagString: Untagged
@@ -468,6 +469,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.18149903}
   m_EdgeRadius: 0
+--- !u!95 &1208753099476073545
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498847534155032268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4184de9a2e30274468ad93ed4de0e472, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7336221674019637509
 GameObject:
   m_ObjectHideFlags: 0
