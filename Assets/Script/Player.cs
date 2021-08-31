@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Player : MonoBehaviour
+
+public class Player :MonoBehaviour
 {
 
     //‹|Prefab
@@ -17,8 +19,44 @@ public class Player : MonoBehaviour
     //‘I‘ð’†‚Ì‹|
     public Unit selectUnit;
 
-   
+    public SaveData savedata;
 
+    public StatView s;
+
+    public GameObject uni;
+
+    private List<GameObject> party;
+    /*
+    
+    private Sprite sprites;
+
+   
+    private Sprite sprite;
+
+    public void imageview()
+    {
+        GameObject[] ima = { image0, image1, image2, image3, image4, image5, image6, image7 };
+        switch (savedata.BattleParty)
+        {
+            case 1:
+                party = savedata.humanParty1;
+                
+                for (int i = 0; i<= 7; i++)
+                {
+                   
+                }
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+        }
+    
+
+    }
+    */
     //‹|‚ÌŒšÝ‚ªo—ˆ‚é
     public void CreateUnit(Transform t)
     {
@@ -47,10 +85,46 @@ public class Player : MonoBehaviour
         selectUnit= null;
     }
 
-    public void SetUnit(Unit unit)
+    /*public void SetUnit(Unit unit)
     {
         unitPrefab = unit;
+    }*/
+    public void SetUnit(int number)
+    {
+        
+        
+        
+        
+        switch (savedata.BattleParty)
+        {
+            case 1:
+
+                party = savedata.humanParty1;
+                uni = party[number];
+                unitPrefab = uni.GetComponent<Unit>();
+                s.stat(unitPrefab);
+                break;
+            case 2:
+               
+                party = savedata.humanParty2;
+                uni = party[number];
+                unitPrefab = uni.GetComponent<Unit>();
+                s.stat(unitPrefab);
+                break;
+            case 3:
+                party = savedata.humanParty3;
+                uni = party[number];
+                unitPrefab = uni.GetComponent<Unit>();
+                s.stat(unitPrefab);
+                break;
+        }
+
+       
+
+        
     }
+    
+    
 
     void Update()
     {
@@ -77,4 +151,6 @@ public class Player : MonoBehaviour
             selectUnit = null;
         }
     }
+   
+   
 }

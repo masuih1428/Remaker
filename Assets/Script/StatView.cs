@@ -3,19 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatView : MonoBehaviour
+public class StatView :MonoBehaviour
     
 {
-    public Unit unit;
+    public Text text;
     private string Status;
 
     // Start is called before the first frame update
-   public void stat()
+   public void stat(Unit unit)
     {
-        Debug.Log("ugoita");
-        Text t = GameObject.Find("Unitst").transform.Find("Text").GetComponent<Text>();
-        t.text = unit.ToString();
+        
+        text.text= "name:\n" + unit.charaName + "\nhp:" + unit.hp + "\natk:" + unit.atk +
+            "\ndef:" + unit.def + "\nmdef:" + unit.mdef;
+        
     }
+
+   
     // Update is called once per frame
 
 }

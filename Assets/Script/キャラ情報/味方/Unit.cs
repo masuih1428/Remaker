@@ -52,6 +52,7 @@ public class Unit : CharaScript
     public void Start()
     {
         //ステータス設定
+ 
         hp = head.hp + body.hp + hand.hp + leg.hp+wepon.hp;
         atk = head.atk + body.atk + hand.atk + leg.atk + wepon.atk;
         def = head.def + body.def + hand.def + leg.def + wepon.def;

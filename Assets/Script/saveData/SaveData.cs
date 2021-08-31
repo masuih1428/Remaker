@@ -18,4 +18,14 @@ public class SaveData : ScriptableObject
     public GameObject DragObj;//ドラック＆ドロップで使用する変数
     public int dropInt;//プレハブ作成時の変数
     public int HumanInt;//上同
+
+    public Unit unit;
+    public SaveData savedata;
+
+    public SaveData GetSavedata()
+    {
+        return savedata;
+    }
+
+  
 }

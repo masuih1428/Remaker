@@ -68,14 +68,14 @@ MonoBehaviour:
   - {fileID: 8325189819943152683, guid: 298acc46d8de7184da46d40ce387123d, type: 3}
   stage: "\u8349\u539F"
   humanParty1:
-  - {fileID: 3170110005856831132, guid: 549a20cc2862c104185a16d2c5068f37, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 4611764661702408802, guid: 89e368ebc3a6e70468acb51718d33628, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 6041084915117762634, guid: 0225a6e1244c59d42a8e4ead8e3187e1, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
+  - {fileID: 7991744588395772473, guid: 14d5b694197bd914b89145672750b373, type: 3}
   humanParty2:
   - {fileID: 1230223779631233160, guid: 381ca8f8e86300847ad2c4fd5b53c7a6, type: 3}
   - {fileID: 1230223779631233160, guid: 381ca8f8e86300847ad2c4fd5b53c7a6, type: 3}
@@ -102,3 +102,5 @@ MonoBehaviour:
   DragObj: {fileID: 8968009435022608930, guid: 75a5c892470269045b557ad194641058, type: 3}
   dropInt: 93
   HumanInt: 22
+  unit: {fileID: 0}
+  savedata: {fileID: 0}

@@ -20,7 +20,7 @@ public class Ballet : MonoBehaviour
         if (targetEnemy == null)
         {
             //Debug.Log("B2");
-            Destroy(gameObject);
+            //Destroy(gameObject);
             return;
         }
         

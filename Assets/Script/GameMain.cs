@@ -31,6 +31,7 @@ public class GameMain : MonoBehaviour
     void Start()
     {
         state = GAME_STATE.TITLE;
+        //player.imageview();
         StartCoroutine(GameLoop());
     }
 
@@ -41,7 +42,7 @@ public class GameMain : MonoBehaviour
             switch (state)
             {
                 case GAME_STATE.TITLE:
-                    stateText.text = "らくがきたわーでぃふぇんす";
+                    stateText.text = "Press any Button";
                     yield return WaitAnyKey;
                     state = GAME_STATE.WAVE_CHANGE;
                     break;
@@ -83,12 +84,14 @@ public class GameMain : MonoBehaviour
                 case GAME_STATE.GAME_CLEAR:
                     stateText.text = "GAME CLEAR";
                     yield return WaitAnyKey;
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("ホーム");
+                    //SceneManager.LoadScene(0);
                     break;
                 case GAME_STATE.GAME_OVER:
                     stateText.text = "GAME OVER";
                     yield return WaitAnyKey;
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene("ホーム");
+                    //SceneManager.LoadScene(0);
                     break;
             }
 
