@@ -159,7 +159,7 @@ MonoBehaviour:
   atkspeed: 1
   magic: 0
   fry: 0
-  cost: 100
+  cost: 200
   unittype: 0
   lv: 1
   MAX_BLOCK: 0

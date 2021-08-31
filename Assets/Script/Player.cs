@@ -60,8 +60,8 @@ public class Player :MonoBehaviour
     //‹|‚ÌŒšİ‚ªo—ˆ‚é
     public void CreateUnit(Transform t)
     {
-        if (cost < 100) return;
-        cost -= 100;
+        if (cost < unitPrefab.cost) return;
+        cost -= unitPrefab.cost;
         selectUnit = Instantiate(unitPrefab, t);
         selectUnit.transform.localPosition = Vector3.zero;
     }
@@ -102,6 +102,7 @@ public class Player :MonoBehaviour
                 party = savedata.humanParty1;
                 uni = party[number];
                 unitPrefab = uni.GetComponent<Unit>();
+                
                 s.stat(unitPrefab);
                 break;
             case 2:
@@ -109,12 +110,14 @@ public class Player :MonoBehaviour
                 party = savedata.humanParty2;
                 uni = party[number];
                 unitPrefab = uni.GetComponent<Unit>();
+                
                 s.stat(unitPrefab);
                 break;
             case 3:
                 party = savedata.humanParty3;
                 uni = party[number];
                 unitPrefab = uni.GetComponent<Unit>();
+                
                 s.stat(unitPrefab);
                 break;
         }
