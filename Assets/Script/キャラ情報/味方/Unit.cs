@@ -65,6 +65,7 @@ public class Unit : CharaScript
         hpSlider = HPUI.transform.Find("HPBar").GetComponent<Slider>();
         hpSlider.value = 1f;
         StartCoroutine("UpdateUnitHPValue");
+
         if (unittype == 0)
         {
             StartCoroutine(ShortDistance());
@@ -135,10 +136,10 @@ public class Unit : CharaScript
 
 
 
-                                            //«Œ³hand.atkSpeed
-            yield return new WaitForSeconds(atkspeed);//               «Œ³wepon.range
+                                            //«Œ³
+            yield return new WaitForSeconds(hand.atkSpeed);//               «Œ³wepon.range
             
-            var collider = Physics2D.OverlapCircle(transform.position, range, LayerMask.GetMask("Enemy"));
+            var collider = Physics2D.OverlapCircle(transform.position, wepon.range, LayerMask.GetMask("Enemy"));
           
             
             if (collider != null)
@@ -198,11 +199,11 @@ public class Unit : CharaScript
         {                                   //«hand.atkSpeed
             Debug.Log("2da");
             Debug.Log(balletPrefab);
-            yield return new WaitForSeconds(ShotInterval);
+            yield return new WaitForSeconds(hand.atkSpeed);
             Debug.Log(balletPrefab);
             // ‚±‚±‚Å“G‚ğ’T‚µ‚ÄA“G‚ğŒ‚‚Â
             //                                                         «wepon.range
-            var collider = Physics2D.OverlapCircle(transform.position,range, LayerMask.GetMask("Enemy"));
+            var collider = Physics2D.OverlapCircle(transform.position, wepon.range, LayerMask.GetMask("Enemy"));
             Debug.Log("3da");
             Debug.Log(balletPrefab);
             if (collider != null)
@@ -256,5 +257,6 @@ public class Unit : CharaScript
     {
         return hp;
     }
+    
 
 }

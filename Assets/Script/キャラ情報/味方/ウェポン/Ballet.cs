@@ -28,7 +28,7 @@ public class Ballet : MonoBehaviour
         Debug.Log("B4");
         transform.position += v.normalized * Balletspeed * Time.deltaTime;
         Debug.Log("B5");
-        if (v.magnitude < 0.7f)//‚æ‚­‚È‚¢
+        if (true/*v.magnitude < 0.7f*/)//‚æ‚­‚È‚¢
         {
             Debug.Log("B6");
             //Debug.Log(atk);

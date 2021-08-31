@@ -60,21 +60,25 @@ public class Player :MonoBehaviour
     //弓の建設が出来る
     public void CreateUnit(Transform t)
     {
-        if (cost < unitPrefab.cost) return;
-        cost -= unitPrefab.cost;
-        selectUnit = Instantiate(unitPrefab, t);
-        selectUnit.transform.localPosition = Vector3.zero;
+        
+            if (cost < unitPrefab.cost) return;
+            cost -= unitPrefab.cost;
+            selectUnit = Instantiate(unitPrefab, t);
+            selectUnit.transform.localPosition = Vector3.zero;
+            
+        
+        
     }
 
     //選択中の弓のレベルアップが出来る
-    public void LevelUpUnit()
+    /*public void LevelUpUnit()
     {
         if (selectUnit == null) return;  //何も選択されていない
         if (cost < selectUnit.cost) return; //所持金が足りない
         cost -= selectUnit.cost;
         selectUnit.lv++;
         //弓のレベルアップをする
-    }
+    }*/
 
     //選択中の弓の売却が出来る
     public void SellUnit()
@@ -82,7 +86,9 @@ public class Player :MonoBehaviour
         if (selectUnit == null) return;
         cost += selectUnit.Price;
         Destroy(selectUnit.gameObject);
-        selectUnit= null;
+        selectUnit = null;
+        
+
     }
 
     /*public void SetUnit(Unit unit)

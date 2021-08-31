@@ -110,7 +110,7 @@ MonoBehaviour:
   def: 0
   mdef: 0
   atkspeed: 1
-  magic: 1
+  magic: 0
   fry: 0
   cost: 100
   balletPrefab: {fileID: 0}

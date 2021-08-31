@@ -162,6 +162,7 @@ MonoBehaviour:
   cost: 200
   unittype: 0
   lv: 1
+  canplase: 0
   MAX_BLOCK: 0
   range: 1
   head: {fileID: 902930928560974773, guid: 460b60abbfd5317449057b8d1f089b39, type: 3}

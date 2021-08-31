@@ -111,7 +111,7 @@ MonoBehaviour:
   mdef: 0
   atkspeed: 1
   magic: 0
-  fry: 1
+  fry: 0
   cost: 100
   balletPrefab: {fileID: 0}
   unit: {fileID: 0}
@@ -209,6 +209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1303005395551226296}
     m_Modifications:
+    - target: {fileID: 4392095975782846474, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5069028653069906022, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
       propertyPath: m_Name
       value: HPUI
@@ -308,6 +312,18 @@ PrefabInstance:
     - target: {fileID: 8752665634674248914, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752665634674248914, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.0102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752665634674248914, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752665634674248914, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.2583
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b09e9a2d55114419e385d8321b2a26, type: 3}
